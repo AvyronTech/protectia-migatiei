@@ -618,7 +618,7 @@ export function LandingPage() {
 
               {/* Powered by Avyron — sub coloanele Explorează / Implică-te */}
               <a
-                href="https://avyron.eu"
+                href="https://avyron.ro"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Powered by Avyron — descoperă-ne"
