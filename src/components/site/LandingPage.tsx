@@ -512,7 +512,7 @@ export function LandingPage() {
 
         {/* ============ CONTACT / FOOTER ============ */}
         <footer id="contact" className="border-t border-border bg-navy text-white">
-          <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-12">
+          <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:grid-cols-12 lg:gap-10">
             {/* Brand */}
             <div className="lg:col-span-4">
               <div className="flex items-center gap-3">
