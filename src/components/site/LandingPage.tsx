@@ -4,6 +4,7 @@ import { FloatingActions } from "@/components/site/FloatingActions";
 import { Reveal, CountUp } from "@/components/site/Reveal";
 import { useI18n } from "@/lib/i18n";
 import logoAsset from "@/assets/logo.asset.json";
+import avyronAsset from "@/assets/avyron-powered.jpg.asset.json";
 import heroImg from "@/assets/hero.jpg";
 import aboutImg from "@/assets/about.jpg";
 import prog1 from "@/assets/program-integration.jpg";

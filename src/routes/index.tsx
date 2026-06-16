@@ -4,13 +4,13 @@ import { LandingPage } from "@/components/site/LandingPage";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Protecția Migrației — Asociația Europa" },
+      { title: "Asociația Europa Protecția Migrației — ONG european" },
       {
         name: "description",
         content:
-          "ONG european: asistență juridică, integrare și advocacy pentru migranți și refugiați. Sediu Mediaș, Sibiu.",
+          "Asociația Europa Protecția Migrației — ONG european cu scopul protecției migrației: asistență juridică, integrare și advocacy pentru migranți și refugiați. Sediu Mediaș, Sibiu.",
       },
-      { name: "keywords", content: "ONG migrație, protecția migrației, asistență refugiați, integrare europeană, Asociația Europa, Mediaș Sibiu" },
+      { name: "keywords", content: "Asociația Europa Protecția Migrației, ONG migrație, protecția migrației, asistență refugiați, integrare europeană, Mediaș Sibiu" },
       { property: "og:title", content: "Protecția Migrației — Asociația Europa" },
       {
         property: "og:description",
@@ -37,9 +37,10 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "NGO",
-          name: "Asociația Europa — Protecția Migrației",
+          name: "Asociația Europa Protecția Migrației",
+          alternateName: "Asociația Europa",
           description:
-            "ONG european care oferă asistență juridică, integrare și advocacy pentru migranți și refugiați.",
+            "ONG european cu scopul protecției migrației — oferă asistență juridică, integrare și advocacy pentru migranți și refugiați.",
           email: "asociatiemigratie@gmail.com",
           telephone: "+40724425003",
           address: {
