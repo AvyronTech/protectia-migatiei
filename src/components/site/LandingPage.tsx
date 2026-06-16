@@ -29,7 +29,7 @@ export function LandingPage() {
         {/* ============ HERO ============ */}
         <section
           aria-labelledby="hero-title"
-          className="relative isolate flex min-h-[100svh] items-center pb-20 pt-32 sm:pt-36"
+          className="relative isolate flex min-h-[88svh] items-center pb-14 pt-28 sm:pt-32"
         >
           <img
             src={heroImg}
@@ -95,7 +95,7 @@ export function LandingPage() {
             </Reveal>
 
             <Reveal delay={620}>
-              <dl className="mt-14 grid max-w-2xl grid-cols-3 gap-3 sm:gap-6">
+              <dl className="mt-10 grid max-w-2xl grid-cols-3 gap-3 sm:gap-6">
                 {[
                   { n: 120, s: "+", l: "hero.stat1" as const },
                   { n: 3, s: "", l: "hero.stat2" as const },
@@ -119,8 +119,8 @@ export function LandingPage() {
         </section>
 
         {/* ============ ABOUT ============ */}
-        <section id="about" className="relative py-24 sm:py-32">
-          <div className="mx-auto grid max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-20">
+        <section id="about" className="relative py-16 sm:py-20">
+          <div className="mx-auto grid max-w-6xl gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-16">
             <Reveal className="order-2 lg:order-1">
               <div className="relative">
                 <img
@@ -173,7 +173,7 @@ export function LandingPage() {
         </section>
 
         {/* ============ IMPACT ============ */}
-        <section id="impact" className="relative bg-navy py-24 text-white sm:py-32">
+        <section id="impact" className="relative bg-navy py-16 text-white sm:py-20">
           <div
             aria-hidden
             className="absolute inset-0 opacity-[0.08]"
@@ -192,7 +192,7 @@ export function LandingPage() {
               </Reveal>
             </div>
 
-            <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 { n: 120, s: "+", l: "impact.s1.label" as const },
                 { n: 35, s: "+", l: "impact.s2.label" as const },
@@ -214,7 +214,7 @@ export function LandingPage() {
         </section>
 
         {/* ============ PROGRAMS ============ */}
-        <section id="programs" className="py-24 sm:py-32">
+        <section id="programs" className="py-16 sm:py-20">
           <div className="mx-auto max-w-6xl px-5 sm:px-8">
             <div className="max-w-2xl">
               <Reveal><Eyebrow>{t("programs.eyebrow")}</Eyebrow></Reveal>
@@ -225,7 +225,7 @@ export function LandingPage() {
               </Reveal>
             </div>
 
-            <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 { img: prog1, icon: GraduationCap, t: "programs.p1.title" as const, d: "programs.p1.desc" as const },
                 { img: prog2, icon: Scale, t: "programs.p2.title" as const, d: "programs.p2.desc" as const },
@@ -258,8 +258,8 @@ export function LandingPage() {
         </section>
 
         {/* ============ EUROPE MAP ============ */}
-        <section id="map" className="relative bg-surface py-24 sm:py-32">
-          <div className="mx-auto grid max-w-6xl gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_1.2fr] lg:items-center lg:gap-16">
+        <section id="map" className="relative bg-surface py-16 sm:py-20">
+          <div className="mx-auto grid max-w-6xl gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_1.2fr] lg:items-center lg:gap-14">
             <div>
               <Reveal><Eyebrow>{t("map.eyebrow")}</Eyebrow></Reveal>
               <Reveal delay={100}>
@@ -288,7 +288,7 @@ export function LandingPage() {
         </section>
 
         {/* ============ RESEARCH ============ */}
-        <section id="research" className="py-24 sm:py-32">
+        <section id="research" className="py-16 sm:py-20">
           <div className="mx-auto max-w-6xl px-5 sm:px-8">
             <div className="flex flex-wrap items-end justify-between gap-6">
               <div className="max-w-2xl">
@@ -301,7 +301,7 @@ export function LandingPage() {
               </div>
             </div>
 
-            <div className="mt-12 grid gap-5 lg:grid-cols-3">
+            <div className="mt-10 grid gap-5 lg:grid-cols-3">
               {[
                 { tag: "research.r1.tag" as const, title: "research.r1.title" as const, year: "2025" },
                 { tag: "research.r2.tag" as const, title: "research.r2.title" as const, year: "2025" },
@@ -330,7 +330,7 @@ export function LandingPage() {
         </section>
 
         {/* ============ STORIES ============ */}
-        <section id="stories" className="bg-surface py-24 sm:py-32">
+        <section id="stories" className="bg-surface py-16 sm:py-20">
           <div className="mx-auto max-w-6xl px-5 sm:px-8">
             <div className="max-w-2xl">
               <Reveal><Eyebrow>{t("stories.eyebrow")}</Eyebrow></Reveal>
@@ -341,7 +341,7 @@ export function LandingPage() {
               </Reveal>
             </div>
 
-            <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
               {[
                 { img: story1, n: "stories.s1.name" as const, f: "stories.s1.from" as const, q: "stories.s1.quote" as const },
                 { img: story2, n: "stories.s2.name" as const, f: "stories.s2.from" as const, q: "stories.s2.quote" as const },
@@ -374,7 +374,7 @@ export function LandingPage() {
         </section>
 
         {/* ============ PARTNERS ============ */}
-        <section id="partners" className="py-20 sm:py-24">
+        <section id="partners" className="py-12 sm:py-16">
           <div className="mx-auto max-w-6xl px-5 sm:px-8">
             <Reveal>
               <p className="text-center text-[11px] font-bold uppercase tracking-[0.22em] text-muted-foreground">
@@ -404,43 +404,37 @@ export function LandingPage() {
         </section>
 
         {/* ============ FOLLOW US ============ */}
-        <section id="follow" aria-labelledby="follow-title" className="bg-surface py-20 sm:py-24">
-          <div className="mx-auto max-w-6xl px-5 sm:px-8">
-            <div className="mx-auto max-w-2xl text-center">
+        <section id="follow" aria-labelledby="follow-title" className="py-10 sm:py-14">
+          <div className="mx-auto max-w-4xl px-5 sm:px-8">
+            <div className="flex flex-col items-center gap-2 text-center">
               <Reveal><Eyebrow>{t("follow.eyebrow")}</Eyebrow></Reveal>
-              <Reveal delay={100}>
-                <h2 id="follow-title" className="mt-4 text-balance text-3xl font-black tracking-tight text-navy sm:text-4xl">
+              <Reveal delay={80}>
+                <h2 id="follow-title" className="text-balance text-xl font-black tracking-tight text-navy sm:text-2xl">
                   {t("follow.title")}
                 </h2>
               </Reveal>
-              <Reveal delay={180}>
-                <p className="mt-4 text-base leading-relaxed text-muted-foreground">{t("follow.desc")}</p>
-              </Reveal>
             </div>
 
-            <Reveal delay={240}>
-              <ul className="mx-auto mt-10 grid max-w-3xl gap-4 sm:grid-cols-3">
+            <Reveal delay={160}>
+              <ul className="mx-auto mt-6 grid max-w-2xl grid-cols-3 gap-3 sm:gap-4">
                 {[
                   {
                     name: "Instagram",
-                    handle: "@protectiamigratiei",
                     href: "https://instagram.com/protectiamigratiei",
                     Icon: Instagram,
-                    grad: "linear-gradient(135deg,#feda75,#fa7e1e 40%,#d62976 70%,#962fbf)",
+                    grad: "linear-gradient(135deg,#feda75,#fa7e1e 35%,#d62976 65%,#962fbf)",
                   },
                   {
                     name: "Facebook",
-                    handle: "Asociația Europa",
                     href: "https://facebook.com/protectiamigratiei",
                     Icon: Facebook,
-                    grad: "linear-gradient(135deg,#1877F2,#0a4fb8)",
+                    grad: "linear-gradient(135deg,#3b82f6,#1877F2 55%,#0a3d8f)",
                   },
                   {
                     name: "TikTok",
-                    handle: "@protectiamigratiei",
                     href: "https://tiktok.com/@protectiamigratiei",
                     Icon: TikTokIcon,
-                    grad: "linear-gradient(135deg,#25F4EE,#000000 55%,#FE2C55)",
+                    grad: "linear-gradient(135deg,#25F4EE,#111 55%,#FE2C55)",
                   },
                 ].map((s) => (
                   <li key={s.name}>
@@ -448,24 +442,19 @@ export function LandingPage() {
                       href={s.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group relative flex h-full items-center gap-4 overflow-hidden rounded-2xl border border-border bg-card p-5 shadow-soft transition-all hover:-translate-y-1 hover:shadow-glow"
+                      aria-label={s.name}
+                      className="group relative flex aspect-square items-center justify-center overflow-hidden rounded-2xl text-white shadow-soft transition-all hover:-translate-y-1 hover:shadow-glow"
+                      style={{ background: s.grad }}
                     >
                       <span
                         aria-hidden
-                        className="absolute inset-x-0 top-0 h-1 opacity-80"
-                        style={{ background: s.grad }}
+                        className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                        style={{ background: "radial-gradient(circle at 30% 20%, rgba(255,255,255,0.35), transparent 60%)" }}
                       />
-                      <span
-                        className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-white shadow-soft transition-transform group-hover:scale-110"
-                        style={{ background: s.grad }}
-                      >
-                        <s.Icon className="h-6 w-6" aria-hidden />
+                      <s.Icon className="h-9 w-9 drop-shadow-[0_2px_8px_rgba(0,0,0,0.25)] transition-transform duration-500 group-hover:scale-110 sm:h-10 sm:w-10" aria-hidden />
+                      <span className="absolute bottom-2 left-1/2 -translate-x-1/2 text-[10px] font-bold uppercase tracking-[0.18em] text-white/90">
+                        {s.name}
                       </span>
-                      <span className="min-w-0">
-                        <span className="block text-sm font-bold text-navy">{s.name}</span>
-                        <span className="block truncate text-xs text-muted-foreground">{s.handle}</span>
-                      </span>
-                      <ArrowRight className="ml-auto h-4 w-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-eu-blue" />
                     </a>
                   </li>
                 ))}
@@ -474,12 +463,13 @@ export function LandingPage() {
           </div>
         </section>
 
+
         {/* ============ CTA ============ */}
-        <section id="cta" className="px-5 pb-24 sm:px-8 sm:pb-32">
+        <section id="cta" className="px-5 pb-16 sm:px-8 sm:pb-20">
           <div className="mx-auto max-w-6xl">
             <Reveal>
               <div
-                className="relative overflow-hidden rounded-[2rem] p-8 text-white shadow-glow sm:p-14 lg:p-20"
+                className="relative overflow-hidden rounded-[2rem] p-7 text-white shadow-glow sm:p-10 lg:p-14"
                 style={{ background: "linear-gradient(135deg, var(--navy), color-mix(in oklab, var(--eu-blue) 80%, var(--navy)))" }}
               >
                 <div
@@ -522,34 +512,34 @@ export function LandingPage() {
 
         {/* ============ CONTACT / FOOTER ============ */}
         <footer id="contact" className="border-t border-border bg-navy text-white">
-          <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-12">
+          <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:grid-cols-12 lg:gap-10">
             {/* Brand */}
             <div className="lg:col-span-4">
               <div className="flex items-center gap-3">
-                <img src={logoAsset.url} alt="" width={56} height={56} className="h-12 w-auto rounded-md bg-white p-1" />
+                <img src={logoAsset.url} alt="" width={44} height={44} className="h-10 w-auto rounded-md bg-white p-1" />
                 <div>
-                  <p className="text-base font-bold leading-tight">Asociația Europa</p>
-                  <p className="text-xs text-white/60">Protecția Migrației</p>
+                  <p className="text-sm font-bold leading-tight">Asociația Europa</p>
+                  <p className="text-[11px] text-white/60">Protecția Migrației</p>
                 </div>
               </div>
-              <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/70">{t("footer.tagline")}</p>
-              <div className="mt-5 flex gap-2">
-                <a aria-label="Instagram" href="https://instagram.com/protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
-                  <Instagram className="h-4 w-4" />
+              <p className="mt-3 max-w-sm text-xs leading-relaxed text-white/70">{t("footer.tagline")}</p>
+              <div className="mt-3 flex gap-2">
+                <a aria-label="Instagram" href="https://instagram.com/protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
+                  <Instagram className="h-3.5 w-3.5" />
                 </a>
-                <a aria-label="Facebook" href="https://facebook.com/protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
-                  <Facebook className="h-4 w-4" />
+                <a aria-label="Facebook" href="https://facebook.com/protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
+                  <Facebook className="h-3.5 w-3.5" />
                 </a>
-                <a aria-label="TikTok" href="https://tiktok.com/@protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
-                  <TikTokIcon className="h-4 w-4" />
+                <a aria-label="TikTok" href="https://tiktok.com/@protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
+                  <TikTokIcon className="h-3.5 w-3.5" />
                 </a>
               </div>
             </div>
 
             {/* Contact */}
             <div className="lg:col-span-4">
-              <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/60">{t("contact.title")}</h3>
-              <ul className="mt-4 space-y-3 text-sm">
+              <h3 className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/60">{t("contact.title")}</h3>
+              <ul className="mt-3 space-y-2 text-xs sm:text-sm">
                 <li className="flex gap-3">
                   <Building2 className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
                   <span className="text-white/85">{t("contact.addressValue")}</span>
@@ -566,10 +556,10 @@ export function LandingPage() {
             </div>
 
             {/* Nav columns */}
-            <div className="grid grid-cols-2 gap-8 lg:col-span-4">
+            <div className="grid grid-cols-2 gap-6 lg:col-span-4">
               <div>
-                <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/60">{t("footer.col.explore")}</h3>
-                <ul className="mt-4 space-y-2 text-sm">
+                <h3 className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/60">{t("footer.col.explore")}</h3>
+                <ul className="mt-3 space-y-1.5 text-xs sm:text-sm">
                   {[
                     ["about", "nav.about"],
                     ["programs", "nav.programs"],
@@ -583,8 +573,8 @@ export function LandingPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/60">{t("footer.col.involve")}</h3>
-                <ul className="mt-4 space-y-2 text-sm">
+                <h3 className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/60">{t("footer.col.involve")}</h3>
+                <ul className="mt-3 space-y-1.5 text-xs sm:text-sm">
                   <li><a href="#cta" className="text-white/75 hover:text-white">{t("nav.donate")}</a></li>
                   <li><a href="#follow" className="text-white/75 hover:text-white">{t("follow.eyebrow")}</a></li>
                   <li><a href="#stories" className="text-white/75 hover:text-white">{t("nav.stories")}</a></li>
@@ -594,35 +584,29 @@ export function LandingPage() {
             </div>
           </div>
 
-          {/* ANPC strip */}
+          {/* ANPC strip + copyright (combined for compactness) */}
           <div className="border-t border-white/10 bg-navy/60">
-            <div className="mx-auto flex max-w-6xl flex-col items-start gap-3 px-5 py-4 text-[11px] text-white/60 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-              <p className="font-semibold uppercase tracking-wider text-white/55">{t("footer.anpc.label")}</p>
-              <div className="flex flex-wrap items-center gap-2">
+            <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-3 text-[11px] text-white/55 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+              <p>© {new Date().getFullYear()} Asociația Europa · {t("footer.rights")}</p>
+              <div className="flex items-center gap-2">
+                <span className="hidden font-semibold uppercase tracking-wider text-white/45 sm:inline">{t("footer.anpc.label")}</span>
                 <a
                   href="https://anpc.ro/ce-este-sal/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/5 px-3 py-1.5 font-semibold text-white/80 transition-colors hover:border-teal/40 hover:text-white"
+                  className="rounded-md border border-white/15 bg-white/5 px-2 py-1 font-semibold text-white/75 transition-colors hover:border-teal/40 hover:text-white"
                 >
-                  ANPC – SAL
+                  SAL
                 </a>
                 <a
                   href="https://ec.europa.eu/consumers/odr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/5 px-3 py-1.5 font-semibold text-white/80 transition-colors hover:border-teal/40 hover:text-white"
+                  className="rounded-md border border-white/15 bg-white/5 px-2 py-1 font-semibold text-white/75 transition-colors hover:border-teal/40 hover:text-white"
                 >
-                  ANPC – SOL
+                  SOL
                 </a>
               </div>
-            </div>
-          </div>
-
-          <div className="border-t border-white/10">
-            <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-              <p>© {new Date().getFullYear()} Asociația Europa. {t("footer.rights")}</p>
-              <p>{t("footer.legal")}</p>
             </div>
           </div>
         </footer>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Languages } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import logoAsset from "@/assets/logo.asset.json";
 import { useI18n } from "@/lib/i18n";
 
@@ -63,10 +63,11 @@ export function Navbar() {
           type="button"
           onClick={toggle}
           aria-label={`Switch to ${lang === "ro" ? "English" : "Romanian"}`}
-          className="ml-auto inline-flex items-center gap-1.5 rounded-full border border-white/60 bg-white/40 px-3 py-2 text-xs font-bold uppercase tracking-wider text-navy backdrop-blur transition-all hover:bg-white/80 hover:shadow-soft lg:ml-2"
+          className="ml-auto inline-flex items-center gap-1 rounded-full border border-white/60 bg-white/40 px-3 py-2 text-xs font-bold uppercase tracking-wider text-navy backdrop-blur transition-all hover:bg-white/80 hover:shadow-soft lg:ml-2"
         >
-          <Languages className="h-3.5 w-3.5" aria-hidden />
-          <span className="tabular-nums">{lang === "ro" ? "EN" : "RO"}</span>
+          <span className={lang === "ro" ? "text-navy" : "text-navy/40"}>RO</span>
+          <span className="text-navy/30">/</span>
+          <span className={lang === "en" ? "text-navy" : "text-navy/40"}>EN</span>
         </button>
 
         <a
