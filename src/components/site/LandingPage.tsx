@@ -374,7 +374,7 @@ export function LandingPage() {
         </section>
 
         {/* ============ PARTNERS ============ */}
-        <section id="partners" className="py-20 sm:py-24">
+        <section id="partners" className="py-12 sm:py-16">
           <div className="mx-auto max-w-6xl px-5 sm:px-8">
             <Reveal>
               <p className="text-center text-[11px] font-bold uppercase tracking-[0.22em] text-muted-foreground">
