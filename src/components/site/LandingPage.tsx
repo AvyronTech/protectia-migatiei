@@ -584,35 +584,29 @@ export function LandingPage() {
             </div>
           </div>
 
-          {/* ANPC strip */}
+          {/* ANPC strip + copyright (combined for compactness) */}
           <div className="border-t border-white/10 bg-navy/60">
-            <div className="mx-auto flex max-w-6xl flex-col items-start gap-3 px-5 py-4 text-[11px] text-white/60 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-              <p className="font-semibold uppercase tracking-wider text-white/55">{t("footer.anpc.label")}</p>
-              <div className="flex flex-wrap items-center gap-2">
+            <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-3 text-[11px] text-white/55 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+              <p>© {new Date().getFullYear()} Asociația Europa · {t("footer.rights")}</p>
+              <div className="flex items-center gap-2">
+                <span className="hidden font-semibold uppercase tracking-wider text-white/45 sm:inline">{t("footer.anpc.label")}</span>
                 <a
                   href="https://anpc.ro/ce-este-sal/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/5 px-3 py-1.5 font-semibold text-white/80 transition-colors hover:border-teal/40 hover:text-white"
+                  className="rounded-md border border-white/15 bg-white/5 px-2 py-1 font-semibold text-white/75 transition-colors hover:border-teal/40 hover:text-white"
                 >
-                  ANPC – SAL
+                  SAL
                 </a>
                 <a
                   href="https://ec.europa.eu/consumers/odr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/5 px-3 py-1.5 font-semibold text-white/80 transition-colors hover:border-teal/40 hover:text-white"
+                  className="rounded-md border border-white/15 bg-white/5 px-2 py-1 font-semibold text-white/75 transition-colors hover:border-teal/40 hover:text-white"
                 >
-                  ANPC – SOL
+                  SOL
                 </a>
               </div>
-            </div>
-          </div>
-
-          <div className="border-t border-white/10">
-            <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-              <p>© {new Date().getFullYear()} Asociația Europa. {t("footer.rights")}</p>
-              <p>{t("footer.legal")}</p>
             </div>
           </div>
         </footer>
