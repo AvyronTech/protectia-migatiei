@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Languages } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import logoAsset from "@/assets/logo.asset.json";
 import { useI18n } from "@/lib/i18n";
 
