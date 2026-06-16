@@ -330,7 +330,7 @@ export function LandingPage() {
         </section>
 
         {/* ============ STORIES ============ */}
-        <section id="stories" className="bg-surface py-24 sm:py-32">
+        <section id="stories" className="bg-surface py-16 sm:py-20">
           <div className="mx-auto max-w-6xl px-5 sm:px-8">
             <div className="max-w-2xl">
               <Reveal><Eyebrow>{t("stories.eyebrow")}</Eyebrow></Reveal>
