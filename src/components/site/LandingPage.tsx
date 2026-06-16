@@ -194,10 +194,10 @@ export function LandingPage() {
 
             <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                { n: 12500, s: "+", l: "impact.s1.label" as const },
-                { n: 3200, s: "+", l: "impact.s2.label" as const },
-                { n: 48, s: "", l: "impact.s3.label" as const },
-                { n: 65, s: "+", l: "impact.s4.label" as const },
+                { n: 120, s: "+", l: "impact.s1.label" as const },
+                { n: 35, s: "+", l: "impact.s2.label" as const },
+                { n: 4, s: "", l: "impact.s3.label" as const },
+                { n: 8, s: "+", l: "impact.s4.label" as const },
               ].map((x, i) => (
                 <Reveal key={x.l} delay={i * 100}>
                   <div className="group h-full rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md transition-all hover:-translate-y-1 hover:border-teal/40 hover:bg-white/10">
