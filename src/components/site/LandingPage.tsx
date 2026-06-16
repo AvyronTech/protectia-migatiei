@@ -225,7 +225,7 @@ export function LandingPage() {
               </Reveal>
             </div>
 
-            <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 { img: prog1, icon: GraduationCap, t: "programs.p1.title" as const, d: "programs.p1.desc" as const },
                 { img: prog2, icon: Scale, t: "programs.p2.title" as const, d: "programs.p2.desc" as const },
