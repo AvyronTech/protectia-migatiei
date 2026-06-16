@@ -107,7 +107,14 @@ const ro: Dict = {
 
   "footer.tagline": "Construim punți pentru o Europă primitoare.",
   "footer.rights": "Toate drepturile rezervate.",
-  "footer.legal": "Cod fiscal • ONG înregistrat în România",
+  "footer.legal": "ONG înregistrat în România",
+  "footer.col.explore": "Explorează",
+  "footer.col.involve": "Implică-te",
+  "footer.anpc.label": "Conform legii — Protecția consumatorilor",
+
+  "follow.eyebrow": "Urmărește-ne",
+  "follow.title": "Rămâi aproape de comunitatea noastră.",
+  "follow.desc": "Povești reale, actualizări din proiecte și moduri prin care poți ajuta — direct în feed-ul tău.",
 
   "float.whatsapp": "Scrie-ne pe WhatsApp",
   "float.email": "Trimite-ne un email",
