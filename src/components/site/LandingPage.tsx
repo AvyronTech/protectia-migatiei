@@ -301,7 +301,7 @@ export function LandingPage() {
               </div>
             </div>
 
-            <div className="mt-12 grid gap-5 lg:grid-cols-3">
+            <div className="mt-10 grid gap-5 lg:grid-cols-3">
               {[
                 { tag: "research.r1.tag" as const, title: "research.r1.title" as const, year: "2025" },
                 { tag: "research.r2.tag" as const, title: "research.r2.title" as const, year: "2025" },
