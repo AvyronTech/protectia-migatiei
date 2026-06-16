@@ -18,12 +18,16 @@ export const Route = createFileRoute("/")({
           "Construim punți pentru o Europă primitoare. Asistență juridică, integrare, advocacy pentru migranți și refugiați în 14 țări UE.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "ro_RO" },
+      { property: "og:image", content: "/__l5e/assets-v1/d0fa8b46-9d23-4b7d-a1d6-bae48788ab63/logo-tight.png" },
+      { property: "og:image:alt", content: "Asociația Europa — Protecția Migrației" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Protecția Migrației — Asociația Europa" },
       {
         name: "twitter:description",
         content: "ONG european dedicat protecției migranților și refugiaților.",
       },
+      { name: "twitter:image", content: "/__l5e/assets-v1/d0fa8b46-9d23-4b7d-a1d6-bae48788ab63/logo-tight.png" },
     ],
     scripts: [
       {
