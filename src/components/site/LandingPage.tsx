@@ -57,9 +57,15 @@ export function LandingPage() {
               </span>
             </Reveal>
 
+            <Reveal delay={80}>
+              <p className="mt-4 text-sm font-bold uppercase tracking-[0.28em] text-eu-gold sm:text-base">
+                Asociația Europa Protecția Migrației
+              </p>
+            </Reveal>
+
             <h1
               id="hero-title"
-              className="mt-6 max-w-4xl text-balance text-[2.6rem] font-black leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl"
+              className="mt-4 max-w-4xl text-balance text-[2.6rem] font-black leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl"
             >
               <Reveal as="span" className="block">{t("hero.title.l1")}</Reveal>
               <Reveal as="span" delay={120} className="block">{t("hero.title.l2")}</Reveal>
