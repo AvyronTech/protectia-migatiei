@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
           "Asociația Europa Protecția Migrației — ONG european cu scopul protecției migrației: asistență juridică, integrare și advocacy pentru migranți și refugiați. Sediu Mediaș, Sibiu.",
       },
       { name: "keywords", content: "Asociația Europa Protecția Migrației, ONG migrație, protecția migrației, asistență refugiați, integrare europeană, Mediaș Sibiu" },
-      { property: "og:title", content: "Protecția Migrației — Asociația Europa" },
+      { property: "og:title", content: "Asociația Europa Protecția Migrației" },
       {
         property: "og:description",
         content:
