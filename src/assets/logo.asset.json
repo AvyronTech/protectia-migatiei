@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "e7414b1e-6a4d-4dff-9fcd-25b5edb0e0ad",
+  "asset_id": "d0fa8b46-9d23-4b7d-a1d6-bae48788ab63",
   "project_id": "0c4bc81d-2cd0-438b-a7f5-12e7cf8638c8",
-  "url": "/__l5e/assets-v1/e7414b1e-6a4d-4dff-9fcd-25b5edb0e0ad/logo.jpg",
-  "r2_key": "a/v1/0c4bc81d-2cd0-438b-a7f5-12e7cf8638c8/e7414b1e-6a4d-4dff-9fcd-25b5edb0e0ad/logo.jpg",
-  "original_filename": "logo.jpg",
-  "size": 111539,
-  "content_type": "image/jpeg",
-  "created_at": "2026-06-16T12:33:55Z"
+  "url": "/__l5e/assets-v1/d0fa8b46-9d23-4b7d-a1d6-bae48788ab63/logo-tight.png",
+  "r2_key": "a/v1/0c4bc81d-2cd0-438b-a7f5-12e7cf8638c8/d0fa8b46-9d23-4b7d-a1d6-bae48788ab63/logo-tight.png",
+  "original_filename": "logo-tight.png",
+  "size": 297222,
+  "content_type": "image/png",
+  "created_at": "2026-06-16T13:01:46Z"
 }

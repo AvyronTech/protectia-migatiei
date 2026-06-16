@@ -37,13 +37,11 @@ export function Navbar() {
           <img
             src={logoAsset.url}
             alt="Asociația Europa logo"
-            width={44}
-            height={44}
-            className="h-9 w-auto rounded-md sm:h-10"
+            width={220}
+            height={160}
+            className="h-12 w-auto sm:h-14"
           />
-          <span className="hidden text-sm font-bold tracking-tight text-navy md:inline">
-            Protecția Migrației
-          </span>
+          <span className="sr-only">Asociația Europa — Protecția Migrației</span>
         </a>
 
         <ul className="ml-auto hidden items-center gap-1 lg:flex">

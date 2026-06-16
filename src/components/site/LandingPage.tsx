@@ -515,12 +515,8 @@ export function LandingPage() {
           <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:grid-cols-12 lg:gap-10">
             {/* Brand */}
             <div className="lg:col-span-4">
-              <div className="flex items-center gap-3">
-                <img src={logoAsset.url} alt="" width={44} height={44} className="h-10 w-auto rounded-md bg-white p-1" />
-                <div>
-                  <p className="text-sm font-bold leading-tight">Asociația Europa</p>
-                  <p className="text-[11px] text-white/60">Protecția Migrației</p>
-                </div>
+              <div className="inline-flex items-center rounded-xl bg-white px-3 py-2 shadow-soft">
+                <img src={logoAsset.url} alt="Asociația Europa — Protecția Migrației" width={220} height={160} className="h-14 w-auto" />
               </div>
               <p className="mt-3 max-w-sm text-xs leading-relaxed text-white/70">{t("footer.tagline")}</p>
               <div className="mt-3 flex gap-2">
