@@ -4,22 +4,23 @@ import { LandingPage } from "@/components/site/LandingPage";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Protecția Migrației — Asociația Europa | ONG European pentru migranți" },
+      { title: "Protecția Migrației — Asociația Europa" },
       {
         name: "description",
         content:
-          "Asociația Europa – Protecția Migrației: ONG european care oferă asistență juridică, integrare și advocacy pentru migranți și refugiați. Mediaș, Sibiu — activ în 14 țări UE.",
+          "ONG european: asistență juridică, integrare și advocacy pentru migranți și refugiați. Sediu Mediaș, Sibiu.",
       },
-      { name: "keywords", content: "ONG migrație, protecția migrației, asistență refugiați, integrare europeană, Asociația Europa, Mediaș Sibiu, drepturi migranți, NGO Europe migration" },
+      { name: "keywords", content: "ONG migrație, protecția migrației, asistență refugiați, integrare europeană, Asociația Europa, Mediaș Sibiu" },
       { property: "og:title", content: "Protecția Migrației — Asociația Europa" },
       {
         property: "og:description",
         content:
-          "Construim punți pentru o Europă primitoare. Asistență juridică, integrare, advocacy pentru migranți și refugiați în 14 țări UE.",
+          "ONG european: asistență juridică, integrare și advocacy pentru migranți și refugiați.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "ro_RO" },
-      { property: "og:image", content: "/__l5e/assets-v1/d0fa8b46-9d23-4b7d-a1d6-bae48788ab63/logo-tight.png" },
+      { property: "og:url", content: "https://avyron.eu/" },
+      { property: "og:image", content: "https://avyron.eu/__l5e/assets-v1/d0fa8b46-9d23-4b7d-a1d6-bae48788ab63/logo-tight.png" },
       { property: "og:image:alt", content: "Asociația Europa — Protecția Migrației" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Protecția Migrației — Asociația Europa" },
@@ -27,8 +28,9 @@ export const Route = createFileRoute("/")({
         name: "twitter:description",
         content: "ONG european dedicat protecției migranților și refugiaților.",
       },
-      { name: "twitter:image", content: "/__l5e/assets-v1/d0fa8b46-9d23-4b7d-a1d6-bae48788ab63/logo-tight.png" },
+      { name: "twitter:image", content: "https://avyron.eu/__l5e/assets-v1/d0fa8b46-9d23-4b7d-a1d6-bae48788ab63/logo-tight.png" },
     ],
+    links: [{ rel: "canonical", href: "https://avyron.eu/" }],
     scripts: [
       {
         type: "application/ld+json",
