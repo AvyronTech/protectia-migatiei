@@ -33,13 +33,13 @@ export function Navbar() {
           scrolled ? "shadow-glow" : ""
         }`}
       >
-        <a href="#top" className="flex shrink-0 items-center gap-2">
+        <a href="#top" className="flex shrink-0 items-center gap-2.5">
           <img
             src={logoAsset.url}
-            alt="Asociația Europa logo"
-            width={220}
-            height={160}
-            className="h-12 w-auto sm:h-14"
+            alt="Asociația Europa — Protecția Migrației logo"
+            width={260}
+            height={190}
+            className="h-16 w-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.18)] sm:h-20"
           />
           <span className="sr-only">Asociația Europa — Protecția Migrației</span>
         </a>
