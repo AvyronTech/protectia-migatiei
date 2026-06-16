@@ -225,7 +225,14 @@ const en: Dict = {
 
   "footer.tagline": "Building bridges for a welcoming Europe.",
   "footer.rights": "All rights reserved.",
-  "footer.legal": "Tax ID • NGO registered in Romania",
+  "footer.legal": "NGO registered in Romania",
+  "footer.col.explore": "Explore",
+  "footer.col.involve": "Get involved",
+  "footer.anpc.label": "In accordance with consumer protection law",
+
+  "follow.eyebrow": "Follow us",
+  "follow.title": "Stay close to our community.",
+  "follow.desc": "Real stories, project updates and ways you can help — straight to your feed.",
 
   "float.whatsapp": "Message us on WhatsApp",
   "float.email": "Send us an email",
