@@ -14,8 +14,8 @@ import story2 from "@/assets/story-2.jpg";
 import story3 from "@/assets/story-3.jpg";
 
 const EMAIL = "asociatiemigratie@gmail.com";
-const PHONE_DISPLAY = "+40 758 790 124";
-const PHONE = "40758790124";
+const PHONE_DISPLAY = "+40 724 425 003";
+const PHONE = "40724425003";
 
 export function LandingPage() {
   const { t } = useI18n();

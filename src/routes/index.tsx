@@ -41,7 +41,7 @@ export const Route = createFileRoute("/")({
           description:
             "ONG european care oferă asistență juridică, integrare și advocacy pentru migranți și refugiați.",
           email: "asociatiemigratie@gmail.com",
-          telephone: "+40758790124",
+          telephone: "+40724425003",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Str. Tineretului nr. 11, bl. 7, sc. B, ap. 59",
