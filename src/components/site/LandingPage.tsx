@@ -29,7 +29,7 @@ export function LandingPage() {
         {/* ============ HERO ============ */}
         <section
           aria-labelledby="hero-title"
-          className="relative isolate flex min-h-[100svh] items-center pb-20 pt-32 sm:pt-36"
+          className="relative isolate flex min-h-[88svh] items-center pb-14 pt-28 sm:pt-32"
         >
           <img
             src={heroImg}
