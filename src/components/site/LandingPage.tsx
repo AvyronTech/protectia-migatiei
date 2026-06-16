@@ -288,7 +288,7 @@ export function LandingPage() {
         </section>
 
         {/* ============ RESEARCH ============ */}
-        <section id="research" className="py-24 sm:py-32">
+        <section id="research" className="py-16 sm:py-20">
           <div className="mx-auto max-w-6xl px-5 sm:px-8">
             <div className="flex flex-wrap items-end justify-between gap-6">
               <div className="max-w-2xl">
