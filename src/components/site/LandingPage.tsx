@@ -173,7 +173,7 @@ export function LandingPage() {
         </section>
 
         {/* ============ IMPACT ============ */}
-        <section id="impact" className="relative bg-navy py-24 text-white sm:py-32">
+        <section id="impact" className="relative bg-navy py-16 text-white sm:py-20">
           <div
             aria-hidden
             className="absolute inset-0 opacity-[0.08]"
