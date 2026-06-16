@@ -518,7 +518,31 @@ export function LandingPage() {
         </section>
 
         {/* ============ CONTACT / FOOTER ============ */}
-        <footer id="contact" className="border-t border-border bg-navy text-white">
+        <footer id="contact" className="relative isolate overflow-hidden border-t border-white/10 bg-navy text-white">
+          {/* Decorative pro background */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 -z-10 opacity-[0.55]"
+            style={{
+              background:
+                "radial-gradient(60% 80% at 12% 0%, color-mix(in oklab, var(--eu-blue) 55%, transparent) 0%, transparent 60%), radial-gradient(50% 70% at 92% 10%, color-mix(in oklab, var(--teal) 45%, transparent) 0%, transparent 65%), radial-gradient(45% 60% at 70% 110%, color-mix(in oklab, var(--eu-gold) 30%, transparent) 0%, transparent 70%)",
+            }}
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 -z-10 opacity-[0.08] mix-blend-screen"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.6) 1px, transparent 1px)",
+              backgroundSize: "44px 44px",
+              maskImage: "radial-gradient(ellipse at center, black 30%, transparent 75%)",
+            }}
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-px"
+            style={{ background: "linear-gradient(90deg, transparent, color-mix(in oklab, var(--teal) 60%, transparent), transparent)" }}
+          />
           <div className="mx-auto grid max-w-6xl gap-6 px-5 py-8 sm:px-8 sm:py-9 lg:grid-cols-12 lg:gap-8">
             {/* Brand */}
             <div className="lg:col-span-4">
