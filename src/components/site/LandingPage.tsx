@@ -119,8 +119,8 @@ export function LandingPage() {
         </section>
 
         {/* ============ ABOUT ============ */}
-        <section id="about" className="relative py-24 sm:py-32">
-          <div className="mx-auto grid max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-20">
+        <section id="about" className="relative py-16 sm:py-20">
+          <div className="mx-auto grid max-w-6xl gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-16">
             <Reveal className="order-2 lg:order-1">
               <div className="relative">
                 <img
