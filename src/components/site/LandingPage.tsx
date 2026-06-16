@@ -95,7 +95,7 @@ export function LandingPage() {
             </Reveal>
 
             <Reveal delay={620}>
-              <dl className="mt-14 grid max-w-2xl grid-cols-3 gap-3 sm:gap-6">
+              <dl className="mt-10 grid max-w-2xl grid-cols-3 gap-3 sm:gap-6">
                 {[
                   { n: 120, s: "+", l: "hero.stat1" as const },
                   { n: 3, s: "", l: "hero.stat2" as const },
