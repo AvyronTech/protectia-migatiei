@@ -1,4 +1,4 @@
-import { ArrowRight, ShieldCheck, Scale, Briefcase, GraduationCap, HeartPulse, BookOpen, Phone, Mail, Building2, Instagram, Facebook, Send } from "lucide-react";
+import { ArrowRight, ShieldCheck, Scale, Briefcase, GraduationCap, HeartPulse, BookOpen, Phone, Mail, Building2, Instagram, Facebook } from "lucide-react";
 import { Navbar } from "@/components/site/Navbar";
 import { FloatingActions } from "@/components/site/FloatingActions";
 import { Reveal, CountUp } from "@/components/site/Reveal";
