@@ -192,7 +192,7 @@ export function LandingPage() {
               </Reveal>
             </div>
 
-            <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 { n: 120, s: "+", l: "impact.s1.label" as const },
                 { n: 35, s: "+", l: "impact.s2.label" as const },
