@@ -88,14 +88,14 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <div className="liquid-glass pointer-events-auto absolute inset-x-3 top-20 rounded-2xl p-3 lg:hidden">
+        <div className="pointer-events-auto absolute inset-x-3 top-20 rounded-2xl border border-navy/10 bg-white/95 p-3 shadow-glow backdrop-blur-xl lg:hidden">
           <ul className="grid gap-1">
             {sections.map((s) => (
               <li key={s.id}>
                 <a
                   href={`#${s.id}`}
                   onClick={() => setOpen(false)}
-                  className="block rounded-xl px-3 py-2.5 text-sm font-medium text-navy hover:bg-white/60"
+                  className="block rounded-xl px-3 py-2.5 text-sm font-semibold text-navy hover:bg-eu-blue/10 hover:text-eu-blue"
                 >
                   {t(s.key)}
                 </a>
