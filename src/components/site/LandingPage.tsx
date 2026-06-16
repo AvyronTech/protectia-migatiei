@@ -522,13 +522,13 @@ export function LandingPage() {
           <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:grid-cols-12 lg:gap-10">
             {/* Brand */}
             <div className="lg:col-span-4">
-              <div className="inline-flex items-center justify-center rounded-2xl bg-white px-5 py-4 shadow-glow">
+              <div className="inline-flex items-center justify-center rounded-2xl bg-white px-2 py-3 shadow-glow">
                 <img
                   src={logoAsset.url}
                   alt="Asociația Europa — Protecția Migrației"
-                  width={320}
-                  height={232}
-                  className="h-24 w-auto sm:h-28"
+                  width={352}
+                  height={256}
+                  className="h-[106px] w-auto sm:h-[123px]"
                 />
               </div>
               <p className="mt-4 text-sm font-bold text-white">Asociația Europa Protecția Migrației</p>
@@ -551,16 +551,16 @@ export function LandingPage() {
               <h3 className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/60">{t("contact.title")}</h3>
               <ul className="mt-3 space-y-2 text-xs sm:text-sm">
                 <li className="flex gap-3">
-                  <Building2 className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
-                  <span className="text-white/85">{t("contact.addressValue")}</span>
-                </li>
-                <li className="flex gap-3">
                   <Mail className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
                   <a href={`mailto:${EMAIL}`} className="text-white/85 hover:text-white">{EMAIL}</a>
                 </li>
                 <li className="flex gap-3">
                   <Phone className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
                   <a href={`tel:+${PHONE}`} className="text-white/85 hover:text-white">{PHONE_DISPLAY}</a>
+                </li>
+                <li className="flex gap-3">
+                  <Building2 className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
+                  <span className="text-white/85">{t("contact.addressValue")}</span>
                 </li>
               </ul>
             </div>
@@ -606,7 +606,7 @@ export function LandingPage() {
                   width={1774}
                   height={550}
                   loading="lazy"
-                  className="block h-auto w-full"
+                  className="mx-auto block h-auto w-[90%]"
                 />
               </a>
             </div>
