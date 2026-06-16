@@ -465,11 +465,11 @@ export function LandingPage() {
 
 
         {/* ============ CTA ============ */}
-        <section id="cta" className="px-5 pb-24 sm:px-8 sm:pb-32">
+        <section id="cta" className="px-5 pb-16 sm:px-8 sm:pb-20">
           <div className="mx-auto max-w-6xl">
             <Reveal>
               <div
-                className="relative overflow-hidden rounded-[2rem] p-8 text-white shadow-glow sm:p-14 lg:p-20"
+                className="relative overflow-hidden rounded-[2rem] p-7 text-white shadow-glow sm:p-10 lg:p-14"
                 style={{ background: "linear-gradient(135deg, var(--navy), color-mix(in oklab, var(--eu-blue) 80%, var(--navy)))" }}
               >
                 <div
