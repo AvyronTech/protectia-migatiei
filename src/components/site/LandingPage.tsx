@@ -245,6 +245,8 @@ export function LandingPage() {
                       <img
                         src={p.img}
                         alt=""
+                        width={800}
+                        height={600}
                         loading="lazy"
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -360,6 +362,8 @@ export function LandingPage() {
                       <img
                         src={s.img}
                         alt=""
+                        width={800}
+                        height={1000}
                         loading="lazy"
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
