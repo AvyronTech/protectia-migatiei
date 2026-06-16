@@ -4,6 +4,7 @@ import { FloatingActions } from "@/components/site/FloatingActions";
 import { Reveal, CountUp } from "@/components/site/Reveal";
 import { useI18n } from "@/lib/i18n";
 import logoAsset from "@/assets/logo.asset.json";
+import avyronAsset from "@/assets/avyron-powered.jpg.asset.json";
 import heroImg from "@/assets/hero.jpg";
 import aboutImg from "@/assets/about.jpg";
 import prog1 from "@/assets/program-integration.jpg";
@@ -14,8 +15,8 @@ import story2 from "@/assets/story-2.jpg";
 import story3 from "@/assets/story-3.jpg";
 
 const EMAIL = "asociatiemigratie@gmail.com";
-const PHONE_DISPLAY = "+40 758 790 124";
-const PHONE = "40758790124";
+const PHONE_DISPLAY = "+40 724 425 003";
+const PHONE = "40724425003";
 
 export function LandingPage() {
   const { t } = useI18n();
@@ -57,9 +58,15 @@ export function LandingPage() {
               </span>
             </Reveal>
 
+            <Reveal delay={80}>
+              <p className="mt-4 text-sm font-bold uppercase tracking-[0.28em] text-eu-gold sm:text-base">
+                Asociația Europa Protecția Migrației
+              </p>
+            </Reveal>
+
             <h1
               id="hero-title"
-              className="mt-6 max-w-4xl text-balance text-[2.6rem] font-black leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl"
+              className="mt-4 max-w-4xl text-balance text-[2.6rem] font-black leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl"
             >
               <Reveal as="span" className="block">{t("hero.title.l1")}</Reveal>
               <Reveal as="span" delay={120} className="block">{t("hero.title.l2")}</Reveal>
@@ -515,11 +522,18 @@ export function LandingPage() {
           <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:grid-cols-12 lg:gap-10">
             {/* Brand */}
             <div className="lg:col-span-4">
-              <div className="inline-flex items-center rounded-xl bg-white px-3 py-2 shadow-soft">
-                <img src={logoAsset.url} alt="Asociația Europa — Protecția Migrației" width={220} height={160} className="h-14 w-auto" />
+              <div className="inline-flex items-center justify-center rounded-2xl bg-white px-5 py-4 shadow-glow">
+                <img
+                  src={logoAsset.url}
+                  alt="Asociația Europa — Protecția Migrației"
+                  width={320}
+                  height={232}
+                  className="h-24 w-auto sm:h-28"
+                />
               </div>
-              <p className="mt-3 max-w-sm text-xs leading-relaxed text-white/70">{t("footer.tagline")}</p>
-              <div className="mt-3 flex gap-2">
+              <p className="mt-4 text-sm font-bold text-white">Asociația Europa Protecția Migrației</p>
+              <p className="mt-1.5 max-w-sm text-xs leading-relaxed text-white/70">{t("footer.tagline")}</p>
+              <div className="mt-4 flex gap-2">
                 <a aria-label="Instagram" href="https://instagram.com/protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
                   <Instagram className="h-3.5 w-3.5" />
                 </a>
@@ -605,6 +619,26 @@ export function LandingPage() {
               </div>
             </div>
           </div>
+
+          {/* Powered by Avyron */}
+          <a
+            href="https://avyron.eu"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Powered by Avyron — descoperă-ne"
+            className="block border-t border-white/10 bg-black transition-colors hover:bg-white/5"
+          >
+            <div className="mx-auto flex max-w-6xl items-center justify-center px-5 py-2 sm:px-8">
+              <img
+                src={avyronAsset.url}
+                alt="Powered by Avyron"
+                width={1774}
+                height={550}
+                loading="lazy"
+                className="h-10 w-auto sm:h-12"
+              />
+            </div>
+          </a>
         </footer>
       </main>
     </div>

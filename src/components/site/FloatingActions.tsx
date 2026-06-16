@@ -1,7 +1,7 @@
 import { Mail, MessageCircle } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
-const PHONE = "40758790124";
+const PHONE = "40724425003";
 const EMAIL = "asociatiemigratie@gmail.com";
 
 export function FloatingActions() {
