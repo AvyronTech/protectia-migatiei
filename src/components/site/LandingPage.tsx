@@ -591,6 +591,24 @@ export function LandingPage() {
                   <li><a href="#research" className="text-white/75 hover:text-white">{t("nav.research")}</a></li>
                 </ul>
               </div>
+
+              {/* Powered by Avyron — sub coloanele Explorează / Implică-te */}
+              <a
+                href="https://avyron.eu"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Powered by Avyron — descoperă-ne"
+                className="col-span-2 mt-2 block overflow-hidden rounded-xl border border-white/10 bg-black/60 transition-all hover:border-white/25 hover:bg-black/80"
+              >
+                <img
+                  src={avyronAsset.url}
+                  alt="Powered by Avyron"
+                  width={1774}
+                  height={550}
+                  loading="lazy"
+                  className="block h-auto w-full"
+                />
+              </a>
             </div>
           </div>
 
@@ -619,26 +637,6 @@ export function LandingPage() {
               </div>
             </div>
           </div>
-
-          {/* Powered by Avyron */}
-          <a
-            href="https://avyron.eu"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Powered by Avyron — descoperă-ne"
-            className="block border-t border-white/10 bg-black transition-colors hover:bg-white/5"
-          >
-            <div className="mx-auto flex max-w-6xl items-center justify-center px-5 py-2 sm:px-8">
-              <img
-                src={avyronAsset.url}
-                alt="Powered by Avyron"
-                width={1774}
-                height={550}
-                loading="lazy"
-                className="h-10 w-auto sm:h-12"
-              />
-            </div>
-          </a>
         </footer>
       </main>
     </div>
