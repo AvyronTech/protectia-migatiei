@@ -519,21 +519,21 @@ export function LandingPage() {
 
         {/* ============ CONTACT / FOOTER ============ */}
         <footer id="contact" className="border-t border-border bg-navy text-white">
-          <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:grid-cols-12 lg:gap-10">
+          <div className="mx-auto grid max-w-6xl gap-6 px-5 py-8 sm:px-8 sm:py-9 lg:grid-cols-12 lg:gap-8">
             {/* Brand */}
             <div className="lg:col-span-4">
-              <div className="inline-flex items-center justify-center rounded-2xl bg-white px-2 py-3 shadow-glow">
+              <div className="inline-flex items-center justify-center rounded-2xl bg-white px-1 py-2 shadow-glow">
                 <img
                   src={logoAsset.url}
                   alt="Asociația Europa — Protecția Migrației"
-                  width={352}
-                  height={256}
-                  className="h-[106px] w-auto sm:h-[123px]"
+                  width={368}
+                  height={268}
+                  className="h-[111px] w-auto sm:h-[129px]"
                 />
               </div>
-              <p className="mt-4 text-sm font-bold text-white">Asociația Europa Protecția Migrației</p>
-              <p className="mt-1.5 max-w-sm text-xs leading-relaxed text-white/70">{t("footer.tagline")}</p>
-              <div className="mt-4 flex gap-2">
+              <p className="mt-3 text-sm font-bold text-white">Asociația Europa Protecția Migrației</p>
+              <p className="mt-1 max-w-sm text-xs leading-relaxed text-white/70">{t("footer.tagline")}</p>
+              <div className="mt-3 flex gap-2">
                 <a aria-label="Instagram" href="https://instagram.com/protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
                   <Instagram className="h-3.5 w-3.5" />
                 </a>
@@ -606,7 +606,7 @@ export function LandingPage() {
                   width={1774}
                   height={550}
                   loading="lazy"
-                  className="mx-auto block h-auto w-[90%]"
+                  className="mx-auto block h-auto w-[85%]"
                 />
               </a>
             </div>
