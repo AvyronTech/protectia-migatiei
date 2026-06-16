@@ -66,9 +66,7 @@ export function Navbar() {
           className="ml-auto inline-flex items-center gap-1.5 rounded-full border border-white/60 bg-white/40 px-3 py-2 text-xs font-bold uppercase tracking-wider text-navy backdrop-blur transition-all hover:bg-white/80 hover:shadow-soft lg:ml-2"
         >
           <Languages className="h-3.5 w-3.5" aria-hidden />
-          <span className="tabular-nums">{lang.toUpperCase()}</span>
-          <span aria-hidden className="text-eu-blue">/</span>
-          <span aria-hidden className="opacity-50">{t("lang.switch")}</span>
+          <span className="tabular-nums">{lang === "ro" ? "EN" : "RO"}</span>
         </button>
 
         <a
