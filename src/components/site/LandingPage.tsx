@@ -341,7 +341,7 @@ export function LandingPage() {
               </Reveal>
             </div>
 
-            <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
               {[
                 { img: story1, n: "stories.s1.name" as const, f: "stories.s1.from" as const, q: "stories.s1.quote" as const },
                 { img: story2, n: "stories.s2.name" as const, f: "stories.s2.from" as const, q: "stories.s2.quote" as const },
