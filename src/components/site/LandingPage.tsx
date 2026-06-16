@@ -700,3 +700,11 @@ function EuropeMap() {
     </div>
   );
 }
+
+function TikTokIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden className={className}>
+      <path d="M16.5 3a5.5 5.5 0 0 0 4.5 4.4v3a8.5 8.5 0 0 1-4.5-1.3v6.4a6.2 6.2 0 1 1-6.2-6.2c.34 0 .67.03 1 .09v3.1a3.2 3.2 0 1 0 2.2 3.03V3h3z"/>
+    </svg>
+  );
+}
