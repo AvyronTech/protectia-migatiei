@@ -97,9 +97,9 @@ export function LandingPage() {
             <Reveal delay={620}>
               <dl className="mt-14 grid max-w-2xl grid-cols-3 gap-3 sm:gap-6">
                 {[
-                  { n: 12500, s: "+", l: "hero.stat1" as const },
-                  { n: 14, s: "", l: "hero.stat2" as const },
-                  { n: 420, s: "+", l: "hero.stat3" as const },
+                  { n: 120, s: "+", l: "hero.stat1" as const },
+                  { n: 3, s: "", l: "hero.stat2" as const },
+                  { n: 25, s: "+", l: "hero.stat3" as const },
                 ].map((x) => (
                   <div
                     key={x.l}
