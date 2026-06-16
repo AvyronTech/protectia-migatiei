@@ -516,30 +516,30 @@ export function LandingPage() {
             {/* Brand */}
             <div className="lg:col-span-4">
               <div className="flex items-center gap-3">
-                <img src={logoAsset.url} alt="" width={56} height={56} className="h-12 w-auto rounded-md bg-white p-1" />
+                <img src={logoAsset.url} alt="" width={44} height={44} className="h-10 w-auto rounded-md bg-white p-1" />
                 <div>
-                  <p className="text-base font-bold leading-tight">Asociația Europa</p>
-                  <p className="text-xs text-white/60">Protecția Migrației</p>
+                  <p className="text-sm font-bold leading-tight">Asociația Europa</p>
+                  <p className="text-[11px] text-white/60">Protecția Migrației</p>
                 </div>
               </div>
-              <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/70">{t("footer.tagline")}</p>
-              <div className="mt-5 flex gap-2">
-                <a aria-label="Instagram" href="https://instagram.com/protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
-                  <Instagram className="h-4 w-4" />
+              <p className="mt-3 max-w-sm text-xs leading-relaxed text-white/70">{t("footer.tagline")}</p>
+              <div className="mt-3 flex gap-2">
+                <a aria-label="Instagram" href="https://instagram.com/protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
+                  <Instagram className="h-3.5 w-3.5" />
                 </a>
-                <a aria-label="Facebook" href="https://facebook.com/protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
-                  <Facebook className="h-4 w-4" />
+                <a aria-label="Facebook" href="https://facebook.com/protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
+                  <Facebook className="h-3.5 w-3.5" />
                 </a>
-                <a aria-label="TikTok" href="https://tiktok.com/@protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
-                  <TikTokIcon className="h-4 w-4" />
+                <a aria-label="TikTok" href="https://tiktok.com/@protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
+                  <TikTokIcon className="h-3.5 w-3.5" />
                 </a>
               </div>
             </div>
 
             {/* Contact */}
             <div className="lg:col-span-4">
-              <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/60">{t("contact.title")}</h3>
-              <ul className="mt-4 space-y-3 text-sm">
+              <h3 className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/60">{t("contact.title")}</h3>
+              <ul className="mt-3 space-y-2 text-xs sm:text-sm">
                 <li className="flex gap-3">
                   <Building2 className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
                   <span className="text-white/85">{t("contact.addressValue")}</span>
