@@ -528,7 +528,7 @@ export function LandingPage() {
                   alt="Asociația Europa — Protecția Migrației"
                   width={368}
                   height={268}
-                  className="h-[111px] w-auto sm:h-[129px]"
+                  className="h-[122px] w-auto sm:h-[142px]"
                 />
               </div>
               <p className="mt-3 text-sm font-bold text-white">Asociația Europa Protecția Migrației</p>
@@ -606,7 +606,7 @@ export function LandingPage() {
                   width={1774}
                   height={550}
                   loading="lazy"
-                  className="mx-auto block h-auto w-[85%]"
+                  className="mx-auto block h-auto w-[80%]"
                 />
               </a>
             </div>
