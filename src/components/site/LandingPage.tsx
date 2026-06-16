@@ -1,4 +1,4 @@
-import { ArrowRight, ShieldCheck, Scale, Briefcase, GraduationCap, HeartPulse, BookOpen, MapPin, Phone, Mail, Building2 } from "lucide-react";
+import { ArrowRight, ShieldCheck, Scale, Briefcase, GraduationCap, HeartPulse, BookOpen, Phone, Mail, Building2, Instagram, Facebook } from "lucide-react";
 import { Navbar } from "@/components/site/Navbar";
 import { FloatingActions } from "@/components/site/FloatingActions";
 import { Reveal, CountUp } from "@/components/site/Reveal";
@@ -97,9 +97,9 @@ export function LandingPage() {
             <Reveal delay={620}>
               <dl className="mt-14 grid max-w-2xl grid-cols-3 gap-3 sm:gap-6">
                 {[
-                  { n: 12500, s: "+", l: "hero.stat1" as const },
-                  { n: 14, s: "", l: "hero.stat2" as const },
-                  { n: 420, s: "+", l: "hero.stat3" as const },
+                  { n: 120, s: "+", l: "hero.stat1" as const },
+                  { n: 3, s: "", l: "hero.stat2" as const },
+                  { n: 25, s: "+", l: "hero.stat3" as const },
                 ].map((x) => (
                   <div
                     key={x.l}
@@ -194,10 +194,10 @@ export function LandingPage() {
 
             <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                { n: 12500, s: "+", l: "impact.s1.label" as const },
-                { n: 3200, s: "+", l: "impact.s2.label" as const },
-                { n: 48, s: "", l: "impact.s3.label" as const },
-                { n: 65, s: "+", l: "impact.s4.label" as const },
+                { n: 120, s: "+", l: "impact.s1.label" as const },
+                { n: 35, s: "+", l: "impact.s2.label" as const },
+                { n: 4, s: "", l: "impact.s3.label" as const },
+                { n: 8, s: "+", l: "impact.s4.label" as const },
               ].map((x, i) => (
                 <Reveal key={x.l} delay={i * 100}>
                   <div className="group h-full rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md transition-all hover:-translate-y-1 hover:border-teal/40 hover:bg-white/10">
@@ -403,6 +403,77 @@ export function LandingPage() {
           </div>
         </section>
 
+        {/* ============ FOLLOW US ============ */}
+        <section id="follow" aria-labelledby="follow-title" className="bg-surface py-20 sm:py-24">
+          <div className="mx-auto max-w-6xl px-5 sm:px-8">
+            <div className="mx-auto max-w-2xl text-center">
+              <Reveal><Eyebrow>{t("follow.eyebrow")}</Eyebrow></Reveal>
+              <Reveal delay={100}>
+                <h2 id="follow-title" className="mt-4 text-balance text-3xl font-black tracking-tight text-navy sm:text-4xl">
+                  {t("follow.title")}
+                </h2>
+              </Reveal>
+              <Reveal delay={180}>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground">{t("follow.desc")}</p>
+              </Reveal>
+            </div>
+
+            <Reveal delay={240}>
+              <ul className="mx-auto mt-10 grid max-w-3xl gap-4 sm:grid-cols-3">
+                {[
+                  {
+                    name: "Instagram",
+                    handle: "@protectiamigratiei",
+                    href: "https://instagram.com/protectiamigratiei",
+                    Icon: Instagram,
+                    grad: "linear-gradient(135deg,#feda75,#fa7e1e 40%,#d62976 70%,#962fbf)",
+                  },
+                  {
+                    name: "Facebook",
+                    handle: "Asociația Europa",
+                    href: "https://facebook.com/protectiamigratiei",
+                    Icon: Facebook,
+                    grad: "linear-gradient(135deg,#1877F2,#0a4fb8)",
+                  },
+                  {
+                    name: "TikTok",
+                    handle: "@protectiamigratiei",
+                    href: "https://tiktok.com/@protectiamigratiei",
+                    Icon: TikTokIcon,
+                    grad: "linear-gradient(135deg,#25F4EE,#000000 55%,#FE2C55)",
+                  },
+                ].map((s) => (
+                  <li key={s.name}>
+                    <a
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group relative flex h-full items-center gap-4 overflow-hidden rounded-2xl border border-border bg-card p-5 shadow-soft transition-all hover:-translate-y-1 hover:shadow-glow"
+                    >
+                      <span
+                        aria-hidden
+                        className="absolute inset-x-0 top-0 h-1 opacity-80"
+                        style={{ background: s.grad }}
+                      />
+                      <span
+                        className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-white shadow-soft transition-transform group-hover:scale-110"
+                        style={{ background: s.grad }}
+                      >
+                        <s.Icon className="h-6 w-6" aria-hidden />
+                      </span>
+                      <span className="min-w-0">
+                        <span className="block text-sm font-bold text-navy">{s.name}</span>
+                        <span className="block truncate text-xs text-muted-foreground">{s.handle}</span>
+                      </span>
+                      <ArrowRight className="ml-auto h-4 w-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-eu-blue" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
+        </section>
+
         {/* ============ CTA ============ */}
         <section id="cta" className="px-5 pb-24 sm:px-8 sm:pb-32">
           <div className="mx-auto max-w-6xl">
@@ -451,8 +522,9 @@ export function LandingPage() {
 
         {/* ============ CONTACT / FOOTER ============ */}
         <footer id="contact" className="border-t border-border bg-navy text-white">
-          <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[1.2fr_1fr_1fr]">
-            <div>
+          <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-12">
+            {/* Brand */}
+            <div className="lg:col-span-4">
               <div className="flex items-center gap-3">
                 <img src={logoAsset.url} alt="" width={56} height={56} className="h-12 w-auto rounded-md bg-white p-1" />
                 <div>
@@ -461,9 +533,21 @@ export function LandingPage() {
                 </div>
               </div>
               <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/70">{t("footer.tagline")}</p>
+              <div className="mt-5 flex gap-2">
+                <a aria-label="Instagram" href="https://instagram.com/protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
+                  <Instagram className="h-4 w-4" />
+                </a>
+                <a aria-label="Facebook" href="https://facebook.com/protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
+                  <Facebook className="h-4 w-4" />
+                </a>
+                <a aria-label="TikTok" href="https://tiktok.com/@protectiamigratiei" target="_blank" rel="noopener noreferrer" className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-all hover:border-teal/50 hover:bg-white/10 hover:text-white">
+                  <TikTokIcon className="h-4 w-4" />
+                </a>
+              </div>
             </div>
 
-            <div>
+            {/* Contact */}
+            <div className="lg:col-span-4">
               <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/60">{t("contact.title")}</h3>
               <ul className="mt-4 space-y-3 text-sm">
                 <li className="flex gap-3">
@@ -481,22 +565,57 @@ export function LandingPage() {
               </ul>
             </div>
 
-            <div>
-              <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/60">Navigare</h3>
-              <ul className="mt-4 grid grid-cols-2 gap-2 text-sm">
-                {[
-                  ["about", "nav.about"],
-                  ["programs", "nav.programs"],
-                  ["impact", "nav.impact"],
-                  ["research", "nav.research"],
-                  ["stories", "nav.stories"],
-                  ["cta", "nav.donate"],
-                ].map(([id, k]) => (
-                  <li key={id}>
-                    <a href={`#${id}`} className="text-white/75 hover:text-white">{t(k as never)}</a>
-                  </li>
-                ))}
-              </ul>
+            {/* Nav columns */}
+            <div className="grid grid-cols-2 gap-8 lg:col-span-4">
+              <div>
+                <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/60">{t("footer.col.explore")}</h3>
+                <ul className="mt-4 space-y-2 text-sm">
+                  {[
+                    ["about", "nav.about"],
+                    ["programs", "nav.programs"],
+                    ["impact", "nav.impact"],
+                    ["map", "nav.map"],
+                  ].map(([id, k]) => (
+                    <li key={id}>
+                      <a href={`#${id}`} className="text-white/75 hover:text-white">{t(k as never)}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/60">{t("footer.col.involve")}</h3>
+                <ul className="mt-4 space-y-2 text-sm">
+                  <li><a href="#cta" className="text-white/75 hover:text-white">{t("nav.donate")}</a></li>
+                  <li><a href="#follow" className="text-white/75 hover:text-white">{t("follow.eyebrow")}</a></li>
+                  <li><a href="#stories" className="text-white/75 hover:text-white">{t("nav.stories")}</a></li>
+                  <li><a href="#research" className="text-white/75 hover:text-white">{t("nav.research")}</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* ANPC strip */}
+          <div className="border-t border-white/10 bg-navy/60">
+            <div className="mx-auto flex max-w-6xl flex-col items-start gap-3 px-5 py-4 text-[11px] text-white/60 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+              <p className="font-semibold uppercase tracking-wider text-white/55">{t("footer.anpc.label")}</p>
+              <div className="flex flex-wrap items-center gap-2">
+                <a
+                  href="https://anpc.ro/ce-este-sal/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/5 px-3 py-1.5 font-semibold text-white/80 transition-colors hover:border-teal/40 hover:text-white"
+                >
+                  ANPC – SAL
+                </a>
+                <a
+                  href="https://ec.europa.eu/consumers/odr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/5 px-3 py-1.5 font-semibold text-white/80 transition-colors hover:border-teal/40 hover:text-white"
+                >
+                  ANPC – SOL
+                </a>
+              </div>
             </div>
           </div>
 
@@ -579,5 +698,13 @@ function EuropeMap() {
         EU · 14 țări
       </div>
     </div>
+  );
+}
+
+function TikTokIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden className={className}>
+      <path d="M16.5 3a5.5 5.5 0 0 0 4.5 4.4v3a8.5 8.5 0 0 1-4.5-1.3v6.4a6.2 6.2 0 1 1-6.2-6.2c.34 0 .67.03 1 .09v3.1a3.2 3.2 0 1 0 2.2 3.03V3h3z"/>
+    </svg>
   );
 }

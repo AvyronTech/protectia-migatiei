@@ -107,7 +107,14 @@ const ro: Dict = {
 
   "footer.tagline": "Construim punți pentru o Europă primitoare.",
   "footer.rights": "Toate drepturile rezervate.",
-  "footer.legal": "Cod fiscal • ONG înregistrat în România",
+  "footer.legal": "ONG înregistrat în România",
+  "footer.col.explore": "Explorează",
+  "footer.col.involve": "Implică-te",
+  "footer.anpc.label": "Conform legii — Protecția consumatorilor",
+
+  "follow.eyebrow": "Urmărește-ne",
+  "follow.title": "Rămâi aproape de comunitatea noastră.",
+  "follow.desc": "Povești reale, actualizări din proiecte și moduri prin care poți ajuta — direct în feed-ul tău.",
 
   "float.whatsapp": "Scrie-ne pe WhatsApp",
   "float.email": "Trimite-ne un email",
@@ -218,7 +225,14 @@ const en: Dict = {
 
   "footer.tagline": "Building bridges for a welcoming Europe.",
   "footer.rights": "All rights reserved.",
-  "footer.legal": "Tax ID • NGO registered in Romania",
+  "footer.legal": "NGO registered in Romania",
+  "footer.col.explore": "Explore",
+  "footer.col.involve": "Get involved",
+  "footer.anpc.label": "In accordance with consumer protection law",
+
+  "follow.eyebrow": "Follow us",
+  "follow.title": "Stay close to our community.",
+  "follow.desc": "Real stories, project updates and ways you can help — straight to your feed.",
 
   "float.whatsapp": "Message us on WhatsApp",
   "float.email": "Send us an email",

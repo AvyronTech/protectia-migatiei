@@ -66,9 +66,7 @@ export function Navbar() {
           className="ml-auto inline-flex items-center gap-1.5 rounded-full border border-white/60 bg-white/40 px-3 py-2 text-xs font-bold uppercase tracking-wider text-navy backdrop-blur transition-all hover:bg-white/80 hover:shadow-soft lg:ml-2"
         >
           <Languages className="h-3.5 w-3.5" aria-hidden />
-          <span className="tabular-nums">{lang.toUpperCase()}</span>
-          <span aria-hidden className="text-eu-blue">/</span>
-          <span aria-hidden className="opacity-50">{t("lang.switch")}</span>
+          <span className="tabular-nums">{lang === "ro" ? "EN" : "RO"}</span>
         </button>
 
         <a
@@ -90,14 +88,14 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <div className="liquid-glass pointer-events-auto absolute inset-x-3 top-20 rounded-2xl p-3 lg:hidden">
+        <div className="pointer-events-auto absolute inset-x-3 top-20 rounded-2xl border border-navy/10 bg-white/95 p-3 shadow-glow backdrop-blur-xl lg:hidden">
           <ul className="grid gap-1">
             {sections.map((s) => (
               <li key={s.id}>
                 <a
                   href={`#${s.id}`}
                   onClick={() => setOpen(false)}
-                  className="block rounded-xl px-3 py-2.5 text-sm font-medium text-navy hover:bg-white/60"
+                  className="block rounded-xl px-3 py-2.5 text-sm font-semibold text-navy hover:bg-eu-blue/10 hover:text-eu-blue"
                 >
                   {t(s.key)}
                 </a>
