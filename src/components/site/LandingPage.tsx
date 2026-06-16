@@ -258,8 +258,8 @@ export function LandingPage() {
         </section>
 
         {/* ============ EUROPE MAP ============ */}
-        <section id="map" className="relative bg-surface py-24 sm:py-32">
-          <div className="mx-auto grid max-w-6xl gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_1.2fr] lg:items-center lg:gap-16">
+        <section id="map" className="relative bg-surface py-16 sm:py-20">
+          <div className="mx-auto grid max-w-6xl gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_1.2fr] lg:items-center lg:gap-14">
             <div>
               <Reveal><Eyebrow>{t("map.eyebrow")}</Eyebrow></Reveal>
               <Reveal delay={100}>
