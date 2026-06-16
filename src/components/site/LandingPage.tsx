@@ -404,43 +404,37 @@ export function LandingPage() {
         </section>
 
         {/* ============ FOLLOW US ============ */}
-        <section id="follow" aria-labelledby="follow-title" className="bg-surface py-20 sm:py-24">
-          <div className="mx-auto max-w-6xl px-5 sm:px-8">
-            <div className="mx-auto max-w-2xl text-center">
+        <section id="follow" aria-labelledby="follow-title" className="py-10 sm:py-14">
+          <div className="mx-auto max-w-4xl px-5 sm:px-8">
+            <div className="flex flex-col items-center gap-2 text-center">
               <Reveal><Eyebrow>{t("follow.eyebrow")}</Eyebrow></Reveal>
-              <Reveal delay={100}>
-                <h2 id="follow-title" className="mt-4 text-balance text-3xl font-black tracking-tight text-navy sm:text-4xl">
+              <Reveal delay={80}>
+                <h2 id="follow-title" className="text-balance text-xl font-black tracking-tight text-navy sm:text-2xl">
                   {t("follow.title")}
                 </h2>
               </Reveal>
-              <Reveal delay={180}>
-                <p className="mt-4 text-base leading-relaxed text-muted-foreground">{t("follow.desc")}</p>
-              </Reveal>
             </div>
 
-            <Reveal delay={240}>
-              <ul className="mx-auto mt-10 grid max-w-3xl gap-4 sm:grid-cols-3">
+            <Reveal delay={160}>
+              <ul className="mx-auto mt-6 grid max-w-2xl grid-cols-3 gap-3 sm:gap-4">
                 {[
                   {
                     name: "Instagram",
-                    handle: "@protectiamigratiei",
                     href: "https://instagram.com/protectiamigratiei",
                     Icon: Instagram,
-                    grad: "linear-gradient(135deg,#feda75,#fa7e1e 40%,#d62976 70%,#962fbf)",
+                    grad: "linear-gradient(135deg,#feda75,#fa7e1e 35%,#d62976 65%,#962fbf)",
                   },
                   {
                     name: "Facebook",
-                    handle: "Asociația Europa",
                     href: "https://facebook.com/protectiamigratiei",
                     Icon: Facebook,
-                    grad: "linear-gradient(135deg,#1877F2,#0a4fb8)",
+                    grad: "linear-gradient(135deg,#3b82f6,#1877F2 55%,#0a3d8f)",
                   },
                   {
                     name: "TikTok",
-                    handle: "@protectiamigratiei",
                     href: "https://tiktok.com/@protectiamigratiei",
                     Icon: TikTokIcon,
-                    grad: "linear-gradient(135deg,#25F4EE,#000000 55%,#FE2C55)",
+                    grad: "linear-gradient(135deg,#25F4EE,#111 55%,#FE2C55)",
                   },
                 ].map((s) => (
                   <li key={s.name}>
@@ -448,24 +442,19 @@ export function LandingPage() {
                       href={s.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group relative flex h-full items-center gap-4 overflow-hidden rounded-2xl border border-border bg-card p-5 shadow-soft transition-all hover:-translate-y-1 hover:shadow-glow"
+                      aria-label={s.name}
+                      className="group relative flex aspect-square items-center justify-center overflow-hidden rounded-2xl text-white shadow-soft transition-all hover:-translate-y-1 hover:shadow-glow"
+                      style={{ background: s.grad }}
                     >
                       <span
                         aria-hidden
-                        className="absolute inset-x-0 top-0 h-1 opacity-80"
-                        style={{ background: s.grad }}
+                        className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                        style={{ background: "radial-gradient(circle at 30% 20%, rgba(255,255,255,0.35), transparent 60%)" }}
                       />
-                      <span
-                        className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-white shadow-soft transition-transform group-hover:scale-110"
-                        style={{ background: s.grad }}
-                      >
-                        <s.Icon className="h-6 w-6" aria-hidden />
+                      <s.Icon className="h-9 w-9 drop-shadow-[0_2px_8px_rgba(0,0,0,0.25)] transition-transform duration-500 group-hover:scale-110 sm:h-10 sm:w-10" aria-hidden />
+                      <span className="absolute bottom-2 left-1/2 -translate-x-1/2 text-[10px] font-bold uppercase tracking-[0.18em] text-white/90">
+                        {s.name}
                       </span>
-                      <span className="min-w-0">
-                        <span className="block text-sm font-bold text-navy">{s.name}</span>
-                        <span className="block truncate text-xs text-muted-foreground">{s.handle}</span>
-                      </span>
-                      <ArrowRight className="ml-auto h-4 w-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-eu-blue" />
                     </a>
                   </li>
                 ))}
@@ -473,6 +462,7 @@ export function LandingPage() {
             </Reveal>
           </div>
         </section>
+
 
         {/* ============ CTA ============ */}
         <section id="cta" className="px-5 pb-24 sm:px-8 sm:pb-32">
