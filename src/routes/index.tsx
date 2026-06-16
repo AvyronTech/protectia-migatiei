@@ -15,18 +15,18 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "ONG european: asistență juridică, integrare și advocacy pentru migranți și refugiați.",
+          "ONG european dedicat protecției migrației: asistență juridică, integrare și advocacy pentru migranți și refugiați.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "ro_RO" },
       { property: "og:url", content: "https://avyron.eu/" },
       { property: "og:image", content: "https://avyron.eu/__l5e/assets-v1/d0fa8b46-9d23-4b7d-a1d6-bae48788ab63/logo-tight.png" },
-      { property: "og:image:alt", content: "Asociația Europa — Protecția Migrației" },
+      { property: "og:image:alt", content: "Asociația Europa Protecția Migrației" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Protecția Migrației — Asociația Europa" },
+      { name: "twitter:title", content: "Asociația Europa Protecția Migrației" },
       {
         name: "twitter:description",
-        content: "ONG european dedicat protecției migranților și refugiaților.",
+        content: "ONG european dedicat protecției migrației — protejăm migranții și refugiații.",
       },
       { name: "twitter:image", content: "https://avyron.eu/__l5e/assets-v1/d0fa8b46-9d23-4b7d-a1d6-bae48788ab63/logo-tight.png" },
     ],
