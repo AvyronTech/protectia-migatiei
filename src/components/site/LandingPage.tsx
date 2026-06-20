@@ -560,9 +560,9 @@ export function LandingPage() {
                 <img
                   src={logoAsset.url}
                   alt="Asociația Europa — Protecția Migrației"
-                  width={368}
-                  height={268}
-                  className="h-[122px] w-auto sm:h-[142px]"
+                  width={423}
+                  height={308}
+                  className="h-[140px] w-auto sm:h-[163px]"
                 />
               </div>
               <p className="mt-3 text-sm font-bold text-white">Asociația Europa Protecția Migrației</p>
