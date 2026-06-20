@@ -16,8 +16,8 @@ const ro: Dict = {
   "nav.donate": "Donează",
 
   "hero.eyebrow": "ONG European • Protecția Migrației",
-  "hero.title.l1": "Construim punți",
-  "hero.title.l2": "pentru o Europă",
+  "hero.title.l1": "Deschidem drumuri",
+  "hero.title.l2": "către o Europă",
   "hero.title.l3": "primitoare.",
   "hero.subtitle":
     "Asociația Europa sprijină migranți, refugiați și comunități vulnerabile prin asistență juridică, integrare și advocacy la nivel european.",
