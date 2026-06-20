@@ -134,8 +134,8 @@ const en: Dict = {
   "nav.donate": "Donate",
 
   "hero.eyebrow": "European NGO • Migration Protection",
-  "hero.title.l1": "Building bridges",
-  "hero.title.l2": "for a welcoming",
+  "hero.title.l1": "Opening pathways",
+  "hero.title.l2": "to a welcoming",
   "hero.title.l3": "Europe.",
   "hero.subtitle":
     "Asociația Europa supports migrants, refugees and vulnerable communities through legal aid, integration and advocacy across the European Union.",
