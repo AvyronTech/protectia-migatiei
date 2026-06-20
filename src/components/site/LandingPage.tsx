@@ -93,13 +93,13 @@ export function LandingPage() {
 
             <Reveal delay={480}>
               <div className="mt-9 flex flex-wrap items-center gap-3">
-                <a
-                  href="#cta"
+                <Link
+                  to="/doneaza"
                   className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-bold text-navy shadow-glow transition-all hover:scale-[1.03] hover:bg-eu-gold"
                 >
                   {t("hero.cta.primary")}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-                </a>
+                </Link>
                 <a
                   href="#programs"
                   className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition-colors hover:bg-white/15"
