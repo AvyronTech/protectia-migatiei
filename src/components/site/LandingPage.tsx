@@ -372,26 +372,11 @@ export function LandingPage() {
               </p>
             </Reveal>
             <Reveal delay={120}>
-              <div className="mt-8 grid grid-cols-2 items-center gap-6 opacity-80 sm:grid-cols-3 lg:grid-cols-6">
-                {[
-                  "European Commission",
-                  "UNHCR",
-                  "Council of Europe",
-                  "IOM",
-                  "Red Cross",
-                  "ECRE",
-                ].map((name) => (
-                  <div
-                    key={name}
-                    className="flex h-16 items-center justify-center rounded-xl border border-border bg-card px-3 text-center text-xs font-bold tracking-tight text-navy/70 transition-all hover:border-eu-blue/40 hover:text-eu-blue"
-                  >
-                    {name}
-                  </div>
-                ))}
-              </div>
+              <PartnersMarquee />
             </Reveal>
           </div>
         </section>
+
 
         {/* ============ FOLLOW US ============ */}
         <section id="follow" aria-labelledby="follow-title" className="py-10 sm:py-14">
