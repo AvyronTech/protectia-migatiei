@@ -59,8 +59,14 @@ export function LandingPage() {
             </Reveal>
 
             <Reveal delay={80}>
-              <p className="mt-4 text-sm font-bold uppercase tracking-[0.28em] text-eu-gold sm:text-base">
-                Asociația Europa Protecția Migrației
+              <p className="mt-5 flex flex-wrap items-center gap-2.5 font-serif text-base italic tracking-wide text-white sm:gap-3 sm:text-xl">
+                <span className="hidden h-px w-10 bg-eu-gold/70 sm:inline-block" />
+                <span className="bg-gradient-to-r from-white via-eu-gold to-white bg-clip-text font-semibold not-italic text-transparent drop-shadow-[0_1px_8px_rgba(255,205,0,0.25)]">
+                  Asociația&nbsp;Europa
+                </span>
+                <span aria-hidden className="text-eu-gold/80">✦</span>
+                <span className="font-medium text-white/90">Protecția Migrației</span>
+                <span className="hidden h-px w-10 bg-eu-gold/70 sm:inline-block" />
               </p>
             </Reveal>
 
