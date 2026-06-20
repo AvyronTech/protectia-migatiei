@@ -101,11 +101,11 @@ const ro: Dict = {
 
   "contact.title": "Contact",
   "contact.address": "Sediu social",
-  "contact.addressValue": "Mediaș, jud. Sibiu, str. Tineretului, nr. 11, bl. 7, sc. B, ap. 59",
+  "contact.addressValue": "București, România",
   "contact.email": "Email",
   "contact.phone": "Telefon",
 
-  "footer.tagline": "Construim punți pentru o Europă primitoare.",
+  "footer.tagline": "Deschidem drumuri către o Europă primitoare.",
   "footer.rights": "Toate drepturile rezervate.",
   "footer.legal": "ONG înregistrat în România",
   "footer.col.explore": "Explorează",
