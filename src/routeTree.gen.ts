@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as DoneazaRouteImport } from './routes/doneaza'
 import { Route as CookiesRouteImport } from './routes/cookies'
 import { Route as ConfidentialitateRouteImport } from './routes/confidentialitate'
 import { Route as R500RouteImport } from './routes/500'
@@ -19,6 +20,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DoneazaRoute = DoneazaRouteImport.update({
+  id: '/doneaza',
+  path: '/doneaza',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CookiesRoute = CookiesRouteImport.update({
@@ -53,6 +59,7 @@ export interface FileRoutesByFullPath {
   '/500': typeof R500Route
   '/confidentialitate': typeof ConfidentialitateRoute
   '/cookies': typeof CookiesRoute
+  '/doneaza': typeof DoneazaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesByTo {
@@ -61,6 +68,7 @@ export interface FileRoutesByTo {
   '/500': typeof R500Route
   '/confidentialitate': typeof ConfidentialitateRoute
   '/cookies': typeof CookiesRoute
+  '/doneaza': typeof DoneazaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesById {
@@ -70,6 +78,7 @@ export interface FileRoutesById {
   '/500': typeof R500Route
   '/confidentialitate': typeof ConfidentialitateRoute
   '/cookies': typeof CookiesRoute
+  '/doneaza': typeof DoneazaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRouteTypes {
@@ -80,9 +89,17 @@ export interface FileRouteTypes {
     | '/500'
     | '/confidentialitate'
     | '/cookies'
+    | '/doneaza'
     | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/403' | '/500' | '/confidentialitate' | '/cookies' | '/sitemap.xml'
+  to:
+    | '/'
+    | '/403'
+    | '/500'
+    | '/confidentialitate'
+    | '/cookies'
+    | '/doneaza'
+    | '/sitemap.xml'
   id:
     | '__root__'
     | '/'
@@ -90,6 +107,7 @@ export interface FileRouteTypes {
     | '/500'
     | '/confidentialitate'
     | '/cookies'
+    | '/doneaza'
     | '/sitemap.xml'
   fileRoutesById: FileRoutesById
 }
@@ -99,6 +117,7 @@ export interface RootRouteChildren {
   R500Route: typeof R500Route
   ConfidentialitateRoute: typeof ConfidentialitateRoute
   CookiesRoute: typeof CookiesRoute
+  DoneazaRoute: typeof DoneazaRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
 
@@ -109,6 +128,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/doneaza': {
+      id: '/doneaza'
+      path: '/doneaza'
+      fullPath: '/doneaza'
+      preLoaderRoute: typeof DoneazaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/cookies': {
@@ -155,6 +181,7 @@ const rootRouteChildren: RootRouteChildren = {
   R500Route: R500Route,
   ConfidentialitateRoute: ConfidentialitateRoute,
   CookiesRoute: CookiesRoute,
+  DoneazaRoute: DoneazaRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
 export const routeTree = rootRouteImport
