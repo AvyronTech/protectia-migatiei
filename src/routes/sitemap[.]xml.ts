@@ -10,7 +10,9 @@ export const Route = createFileRoute("/sitemap.xml")({
         const today = new Date().toISOString().slice(0, 10);
         const entries = [
           { path: "/", changefreq: "weekly", priority: "1.0", lastmod: today },
+          { path: "/doneaza", changefreq: "monthly", priority: "0.9", lastmod: today },
           { path: "/confidentialitate", changefreq: "yearly", priority: "0.3", lastmod: today },
+          { path: "/cookies", changefreq: "yearly", priority: "0.3", lastmod: today },
         ];
         const urls = entries
           .map(
