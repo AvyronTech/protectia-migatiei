@@ -274,35 +274,6 @@ export function LandingPage() {
           </div>
         </section>
 
-        {/* ============ EUROPE MAP ============ */}
-        <section id="map" className="relative bg-surface py-16 sm:py-20">
-          <div className="mx-auto grid max-w-6xl gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_1.2fr] lg:items-center lg:gap-14">
-            <div>
-              <Reveal><Eyebrow>{t("map.eyebrow")}</Eyebrow></Reveal>
-              <Reveal delay={100}>
-                <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-navy sm:text-4xl lg:text-5xl">
-                  {t("map.title")}
-                </h2>
-              </Reveal>
-              <Reveal delay={200}>
-                <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                  {t("map.desc")}
-                </p>
-              </Reveal>
-              <Reveal delay={300}>
-                <ul className="mt-6 flex flex-wrap gap-2 text-xs">
-                  {["RO", "BG", "HU", "PL", "DE", "FR", "IT", "ES", "GR", "AT", "NL", "BE", "SE", "PT"].map((c) => (
-                    <li key={c} className="rounded-md border border-eu-blue/20 bg-white px-2.5 py-1 font-bold text-eu-blue">{c}</li>
-                  ))}
-                </ul>
-              </Reveal>
-            </div>
-
-            <Reveal delay={120}>
-              <EuropeMap />
-            </Reveal>
-          </div>
-        </section>
 
         {/* ============ RESEARCH ============ */}
         <section id="research" className="py-16 sm:py-20">
