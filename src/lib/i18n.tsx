@@ -16,8 +16,8 @@ const ro: Dict = {
   "nav.donate": "Donează",
 
   "hero.eyebrow": "ONG European • Protecția Migrației",
-  "hero.title.l1": "Construim punți",
-  "hero.title.l2": "pentru o Europă",
+  "hero.title.l1": "Deschidem drumuri",
+  "hero.title.l2": "către o Europă",
   "hero.title.l3": "primitoare.",
   "hero.subtitle":
     "Asociația Europa sprijină migranți, refugiați și comunități vulnerabile prin asistență juridică, integrare și advocacy la nivel european.",
@@ -101,11 +101,11 @@ const ro: Dict = {
 
   "contact.title": "Contact",
   "contact.address": "Sediu social",
-  "contact.addressValue": "Mediaș, jud. Sibiu, str. Tineretului, nr. 11, bl. 7, sc. B, ap. 59",
+  "contact.addressValue": "București, România",
   "contact.email": "Email",
   "contact.phone": "Telefon",
 
-  "footer.tagline": "Construim punți pentru o Europă primitoare.",
+  "footer.tagline": "Deschidem drumuri către o Europă primitoare.",
   "footer.rights": "Toate drepturile rezervate.",
   "footer.legal": "ONG înregistrat în România",
   "footer.col.explore": "Explorează",
@@ -134,8 +134,8 @@ const en: Dict = {
   "nav.donate": "Donate",
 
   "hero.eyebrow": "European NGO • Migration Protection",
-  "hero.title.l1": "Building bridges",
-  "hero.title.l2": "for a welcoming",
+  "hero.title.l1": "Opening pathways",
+  "hero.title.l2": "to a welcoming",
   "hero.title.l3": "Europe.",
   "hero.subtitle":
     "Asociația Europa supports migrants, refugees and vulnerable communities through legal aid, integration and advocacy across the European Union.",
@@ -219,11 +219,11 @@ const en: Dict = {
 
   "contact.title": "Contact",
   "contact.address": "Registered office",
-  "contact.addressValue": "Mediaș, Sibiu County, Tineretului St., no. 11, bl. 7, sc. B, ap. 59",
+  "contact.addressValue": "Bucharest, Romania",
   "contact.email": "Email",
   "contact.phone": "Phone",
 
-  "footer.tagline": "Building bridges for a welcoming Europe.",
+  "footer.tagline": "Opening pathways to a welcoming Europe.",
   "footer.rights": "All rights reserved.",
   "footer.legal": "NGO registered in Romania",
   "footer.col.explore": "Explore",
