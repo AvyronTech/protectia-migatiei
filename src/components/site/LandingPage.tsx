@@ -509,7 +509,7 @@ export function LandingPage() {
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
                     <a
-                      href={`mailto:${EMAIL}?subject=Donație`}
+                      href="/doneaza"
                       className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-bold text-navy shadow-soft transition-transform hover:scale-[1.03]"
                     >
                       {t("cta.donate")} <ArrowRight className="h-4 w-4" />
