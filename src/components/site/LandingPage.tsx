@@ -667,62 +667,69 @@ function Eyebrow({ children, tone = "dark" }: { children: React.ReactNode; tone?
   );
 }
 
-function EuropeMap() {
-  // Stylised pin layout, not a geographically accurate map
-  const points = [
-    { x: 48, y: 72, label: "România" },
-    { x: 38, y: 48, label: "Germania" },
-    { x: 30, y: 60, label: "Franța" },
-    { x: 22, y: 78, label: "Spania" },
-    { x: 42, y: 78, label: "Italia" },
-    { x: 56, y: 58, label: "Polonia" },
-    { x: 64, y: 84, label: "Grecia" },
-    { x: 32, y: 38, label: "Olanda" },
-    { x: 46, y: 30, label: "Suedia" },
-    { x: 50, y: 64, label: "Ungaria" },
-    { x: 58, y: 70, label: "Bulgaria" },
-    { x: 26, y: 88, label: "Portugalia" },
-    { x: 38, y: 56, label: "Austria" },
-    { x: 30, y: 52, label: "Belgia" },
+function PartnersMarquee() {
+  const partners: { name: string; short: string; color: string }[] = [
+    { name: "European Commission", short: "EC", color: "#003399" },
+    { name: "UNHCR", short: "UN", color: "#0072BC" },
+    { name: "Council of Europe", short: "CoE", color: "#003399" },
+    { name: "IOM", short: "IOM", color: "#0033A0" },
+    { name: "Red Cross", short: "✚", color: "#D52B1E" },
+    { name: "ECRE", short: "ECRE", color: "#1B6F47" },
+    { name: "Frontex", short: "FX", color: "#0E4D92" },
+    { name: "UNICEF", short: "UF", color: "#1CABE2" },
+    { name: "Caritas Europa", short: "CE", color: "#E2231A" },
+    { name: "Amnesty International", short: "AI", color: "#FFD200" },
   ];
+  const loop = [...partners, ...partners];
 
   return (
-    <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-white to-surface shadow-soft">
-      <svg viewBox="0 0 100 100" className="absolute inset-0 h-full w-full" aria-hidden>
-        <defs>
-          <radialGradient id="europeGlow" cx="50%" cy="55%" r="55%">
-            <stop offset="0%" stopColor="oklch(0.48 0.22 264)" stopOpacity="0.18" />
-            <stop offset="100%" stopColor="oklch(0.48 0.22 264)" stopOpacity="0" />
-          </radialGradient>
-        </defs>
-        <rect width="100" height="100" fill="url(#europeGlow)" />
-        <g stroke="oklch(0.48 0.22 264 / 0.15)" strokeWidth="0.2" fill="none">
-          {[20, 35, 50, 65, 80].map((y) => (
-            <line key={y} x1="5" x2="95" y1={y} y2={y} />
+    <>
+      <style>{`
+        @keyframes partners-scroll {
+          from { transform: translateX(0); }
+          to   { transform: translateX(-50%); }
+        }
+        .partners-track {
+          animation: partners-scroll 38s linear infinite;
+        }
+        .partners-mask:hover .partners-track { animation-play-state: paused; }
+        @media (prefers-reduced-motion: reduce) {
+          .partners-track { animation: none; }
+        }
+      `}</style>
+      <div
+        className="partners-mask mt-8 overflow-hidden"
+        style={{
+          maskImage:
+            "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
+          WebkitMaskImage:
+            "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
+        }}
+      >
+        <ul className="partners-track flex w-max items-center gap-4 sm:gap-6">
+          {loop.map((p, i) => (
+            <li
+              key={`${p.name}-${i}`}
+              aria-hidden={i >= partners.length}
+              className="flex h-16 shrink-0 items-center gap-3 rounded-2xl border border-border bg-card px-4 shadow-soft transition-colors hover:border-eu-blue/40"
+            >
+              <span
+                className="grid h-10 w-10 shrink-0 place-items-center rounded-xl text-[11px] font-black text-white"
+                style={{ background: p.color }}
+              >
+                {p.short}
+              </span>
+              <span className="whitespace-nowrap text-sm font-bold tracking-tight text-navy/80">
+                {p.name}
+              </span>
+            </li>
           ))}
-          {[20, 35, 50, 65, 80].map((x) => (
-            <line key={x} y1="5" y2="95" x1={x} x2={x} />
-          ))}
-        </g>
-      </svg>
-      {points.map((p) => (
-        <div
-          key={p.label}
-          className="group absolute -translate-x-1/2 -translate-y-1/2"
-          style={{ left: `${p.x}%`, top: `${p.y}%` }}
-        >
-          <span className="block h-2.5 w-2.5 rounded-full bg-eu-blue shadow-[0_0_0_4px_oklch(0.48_0.22_264/0.18)] transition-all group-hover:scale-150 group-hover:bg-teal" />
-          <span className="pointer-events-none absolute left-1/2 top-full mt-1.5 -translate-x-1/2 whitespace-nowrap rounded-md bg-navy px-2 py-1 text-[10px] font-semibold text-white opacity-0 transition-opacity group-hover:opacity-100">
-            {p.label}
-          </span>
-        </div>
-      ))}
-      <div className="absolute bottom-3 right-3 rounded-full border border-border bg-white/80 px-3 py-1 text-[10px] font-semibold text-muted-foreground backdrop-blur">
-        EU · 14 țări
+        </ul>
       </div>
-    </div>
+    </>
   );
 }
+
 
 function TikTokIcon({ className }: { className?: string }) {
   return (
