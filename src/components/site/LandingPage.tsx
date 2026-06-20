@@ -1,4 +1,5 @@
 import { ArrowRight, ShieldCheck, Scale, Briefcase, GraduationCap, HeartPulse, BookOpen, Phone, Mail, Building2, Instagram, Facebook } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
 import { FloatingActions } from "@/components/site/FloatingActions";
 import { openCookieSettings } from "@/components/site/CookieConsent";
