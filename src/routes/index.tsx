@@ -44,12 +44,10 @@ export const Route = createFileRoute("/")({
           description:
             "ONG european cu scopul protecției migrației — oferă asistență juridică, integrare și advocacy pentru migranți și refugiați.",
           email: "asociatiemigratie@gmail.com",
-          telephone: "+40724425003",
+          telephone: "+40210000000",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Str. Tineretului nr. 11, bl. 7, sc. B, ap. 59",
-            addressLocality: "Mediaș",
-            addressRegion: "Sibiu",
+            addressLocality: "București",
             addressCountry: "RO",
           },
           areaServed: "EU",
