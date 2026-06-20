@@ -1,6 +1,7 @@
 import { ArrowRight, ShieldCheck, Scale, Briefcase, GraduationCap, HeartPulse, BookOpen, Phone, Mail, Building2, Instagram, Facebook } from "lucide-react";
 import { Navbar } from "@/components/site/Navbar";
 import { FloatingActions } from "@/components/site/FloatingActions";
+import { openCookieSettings } from "@/components/site/CookieConsent";
 import { Reveal, CountUp } from "@/components/site/Reveal";
 import { useI18n } from "@/lib/i18n";
 import logoAsset from "@/assets/logo.asset.json";
