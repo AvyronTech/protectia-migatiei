@@ -1,6 +1,7 @@
 import { ArrowRight, ShieldCheck, Scale, Briefcase, GraduationCap, HeartPulse, BookOpen, Phone, Mail, Building2, Instagram, Facebook } from "lucide-react";
 import { Navbar } from "@/components/site/Navbar";
 import { FloatingActions } from "@/components/site/FloatingActions";
+import { openCookieSettings } from "@/components/site/CookieConsent";
 import { Reveal, CountUp } from "@/components/site/Reveal";
 import { useI18n } from "@/lib/i18n";
 import logoAsset from "@/assets/logo.asset.json";
@@ -509,7 +510,7 @@ export function LandingPage() {
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
                     <a
-                      href={`mailto:${EMAIL}?subject=Donație`}
+                      href="/doneaza"
                       className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-bold text-navy shadow-soft transition-transform hover:scale-[1.03]"
                     >
                       {t("cta.donate")} <ArrowRight className="h-4 w-4" />
@@ -560,9 +561,9 @@ export function LandingPage() {
                 <img
                   src={logoAsset.url}
                   alt="Asociația Europa — Protecția Migrației"
-                  width={368}
-                  height={268}
-                  className="h-[122px] w-auto sm:h-[142px]"
+                  width={423}
+                  height={308}
+                  className="h-[140px] w-auto sm:h-[163px]"
                 />
               </div>
               <p className="mt-3 text-sm font-bold text-white">Asociația Europa Protecția Migrației</p>
@@ -619,7 +620,7 @@ export function LandingPage() {
               <div>
                 <h3 className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/60">{t("footer.col.involve")}</h3>
                 <ul className="mt-3 space-y-1.5 text-xs sm:text-sm">
-                  <li><a href="#cta" className="text-white/75 hover:text-white">{t("nav.donate")}</a></li>
+                  <li><a href="/doneaza" className="text-white/75 hover:text-white">{t("nav.donate")}</a></li>
                   <li><a href="#follow" className="text-white/75 hover:text-white">{t("follow.eyebrow")}</a></li>
                   <li><a href="#stories" className="text-white/75 hover:text-white">{t("nav.stories")}</a></li>
                   <li><a href="#research" className="text-white/75 hover:text-white">{t("nav.research")}</a></li>
@@ -657,6 +658,19 @@ export function LandingPage() {
                 >
                   Politica de confidențialitate & GDPR
                 </a>
+                <a
+                  href="/cookies"
+                  className="rounded-md border border-white/15 bg-white/5 px-2 py-1 font-semibold text-white/75 transition-colors hover:border-teal/40 hover:text-white"
+                >
+                  Politica de cookies
+                </a>
+                <button
+                  type="button"
+                  onClick={() => openCookieSettings()}
+                  className="rounded-md border border-white/15 bg-white/5 px-2 py-1 font-semibold text-white/75 transition-colors hover:border-teal/40 hover:text-white"
+                >
+                  Setări cookies
+                </button>
                 <span className="hidden font-semibold uppercase tracking-wider text-white/45 sm:inline">{t("footer.anpc.label")}</span>
                 <a
                   href="https://anpc.ro/ce-este-sal/"

@@ -13,6 +13,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { I18nProvider } from "../lib/i18n";
 import { ErrorState } from "../components/site/ErrorState";
+import { CookieConsent } from "../components/site/CookieConsent";
 import faviconIco from "../assets/favicon.ico.asset.json";
 import favicon32 from "../assets/favicon-32.png.asset.json";
 import appleTouchIcon from "../assets/apple-touch-icon.png.asset.json";
@@ -127,6 +128,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <I18nProvider>
         <Outlet />
+        <CookieConsent />
       </I18nProvider>
     </QueryClientProvider>
   );

@@ -10,6 +10,8 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as DoneazaRouteImport } from './routes/doneaza'
+import { Route as CookiesRouteImport } from './routes/cookies'
 import { Route as ConfidentialitateRouteImport } from './routes/confidentialitate'
 import { Route as R500RouteImport } from './routes/500'
 import { Route as R403RouteImport } from './routes/403'
@@ -18,6 +20,16 @@ import { Route as IndexRouteImport } from './routes/index'
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DoneazaRoute = DoneazaRouteImport.update({
+  id: '/doneaza',
+  path: '/doneaza',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CookiesRoute = CookiesRouteImport.update({
+  id: '/cookies',
+  path: '/cookies',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ConfidentialitateRoute = ConfidentialitateRouteImport.update({
@@ -46,6 +58,8 @@ export interface FileRoutesByFullPath {
   '/403': typeof R403Route
   '/500': typeof R500Route
   '/confidentialitate': typeof ConfidentialitateRoute
+  '/cookies': typeof CookiesRoute
+  '/doneaza': typeof DoneazaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesByTo {
@@ -53,6 +67,8 @@ export interface FileRoutesByTo {
   '/403': typeof R403Route
   '/500': typeof R500Route
   '/confidentialitate': typeof ConfidentialitateRoute
+  '/cookies': typeof CookiesRoute
+  '/doneaza': typeof DoneazaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesById {
@@ -61,14 +77,38 @@ export interface FileRoutesById {
   '/403': typeof R403Route
   '/500': typeof R500Route
   '/confidentialitate': typeof ConfidentialitateRoute
+  '/cookies': typeof CookiesRoute
+  '/doneaza': typeof DoneazaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/403' | '/500' | '/confidentialitate' | '/sitemap.xml'
+  fullPaths:
+    | '/'
+    | '/403'
+    | '/500'
+    | '/confidentialitate'
+    | '/cookies'
+    | '/doneaza'
+    | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/403' | '/500' | '/confidentialitate' | '/sitemap.xml'
-  id: '__root__' | '/' | '/403' | '/500' | '/confidentialitate' | '/sitemap.xml'
+  to:
+    | '/'
+    | '/403'
+    | '/500'
+    | '/confidentialitate'
+    | '/cookies'
+    | '/doneaza'
+    | '/sitemap.xml'
+  id:
+    | '__root__'
+    | '/'
+    | '/403'
+    | '/500'
+    | '/confidentialitate'
+    | '/cookies'
+    | '/doneaza'
+    | '/sitemap.xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -76,6 +116,8 @@ export interface RootRouteChildren {
   R403Route: typeof R403Route
   R500Route: typeof R500Route
   ConfidentialitateRoute: typeof ConfidentialitateRoute
+  CookiesRoute: typeof CookiesRoute
+  DoneazaRoute: typeof DoneazaRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
 
@@ -86,6 +128,20 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/doneaza': {
+      id: '/doneaza'
+      path: '/doneaza'
+      fullPath: '/doneaza'
+      preLoaderRoute: typeof DoneazaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cookies': {
+      id: '/cookies'
+      path: '/cookies'
+      fullPath: '/cookies'
+      preLoaderRoute: typeof CookiesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/confidentialitate': {
@@ -124,6 +180,8 @@ const rootRouteChildren: RootRouteChildren = {
   R403Route: R403Route,
   R500Route: R500Route,
   ConfidentialitateRoute: ConfidentialitateRoute,
+  CookiesRoute: CookiesRoute,
+  DoneazaRoute: DoneazaRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
 export const routeTree = rootRouteImport
