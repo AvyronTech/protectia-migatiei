@@ -657,6 +657,19 @@ export function LandingPage() {
                 >
                   Politica de confidențialitate & GDPR
                 </a>
+                <a
+                  href="/cookies"
+                  className="rounded-md border border-white/15 bg-white/5 px-2 py-1 font-semibold text-white/75 transition-colors hover:border-teal/40 hover:text-white"
+                >
+                  Politica de cookies
+                </a>
+                <button
+                  type="button"
+                  onClick={() => openCookieSettings()}
+                  className="rounded-md border border-white/15 bg-white/5 px-2 py-1 font-semibold text-white/75 transition-colors hover:border-teal/40 hover:text-white"
+                >
+                  Setări cookies
+                </button>
                 <span className="hidden font-semibold uppercase tracking-wider text-white/45 sm:inline">{t("footer.anpc.label")}</span>
                 <a
                   href="https://anpc.ro/ce-este-sal/"
