@@ -69,7 +69,7 @@ export function Navbar() {
         </button>
 
         <a
-          href="#cta"
+          href="/doneaza"
           className="hidden rounded-full bg-navy px-4 py-2 text-sm font-semibold text-white shadow-soft transition-transform hover:scale-[1.03] hover:bg-eu-blue sm:inline-flex"
         >
           {t("nav.donate")}
@@ -102,7 +102,7 @@ export function Navbar() {
             ))}
             <li>
               <a
-                href="#cta"
+                href="/doneaza"
                 onClick={() => setOpen(false)}
                 className="mt-1 block rounded-xl bg-navy px-3 py-2.5 text-center text-sm font-semibold text-white"
               >
