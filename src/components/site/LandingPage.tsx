@@ -650,7 +650,13 @@ export function LandingPage() {
           <div className="border-t border-white/10 bg-navy/60">
             <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-3 text-[11px] text-white/55 sm:flex-row sm:items-center sm:justify-between sm:px-8">
               <p>© {new Date().getFullYear()} Asociația Europa · {t("footer.rights")}</p>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
+                <a
+                  href="/confidentialitate"
+                  className="rounded-md border border-white/15 bg-white/5 px-2 py-1 font-semibold text-white/75 transition-colors hover:border-teal/40 hover:text-white"
+                >
+                  Politica de confidențialitate & GDPR
+                </a>
                 <span className="hidden font-semibold uppercase tracking-wider text-white/45 sm:inline">{t("footer.anpc.label")}</span>
                 <a
                   href="https://anpc.ro/ce-este-sal/"
