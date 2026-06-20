@@ -619,7 +619,7 @@ export function LandingPage() {
               <div>
                 <h3 className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/60">{t("footer.col.involve")}</h3>
                 <ul className="mt-3 space-y-1.5 text-xs sm:text-sm">
-                  <li><a href="#cta" className="text-white/75 hover:text-white">{t("nav.donate")}</a></li>
+                  <li><a href="/doneaza" className="text-white/75 hover:text-white">{t("nav.donate")}</a></li>
                   <li><a href="#follow" className="text-white/75 hover:text-white">{t("follow.eyebrow")}</a></li>
                   <li><a href="#stories" className="text-white/75 hover:text-white">{t("nav.stories")}</a></li>
                   <li><a href="#research" className="text-white/75 hover:text-white">{t("nav.research")}</a></li>
